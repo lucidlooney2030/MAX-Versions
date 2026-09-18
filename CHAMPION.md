@@ -42,3 +42,7 @@ Gen-B remains the night-0 dual-rotor champion and the interface reference for ax
 3. Nightly SCORECARDs in `generators` are the source of truth; promotions update this file.
 
 Assumptions match SCORECARDs: N52, Halbach assist estimated (not measured), ~55–65% winding fill, neglect rectifier drop, mechanical shaft RPM.
+
+## Print packs
+
+Every kit listed above includes a **one-plate pack** with preview under [`print-packs/`](print-packs/) (Kobra 3 Max, usable 410×410 mm). Open `one-plate/preview.png` and `PLATE.md` for bed-fit confirmation.

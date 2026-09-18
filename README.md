@@ -63,6 +63,20 @@ Workflow:
 2. Scorecards compare est. power @200 RPM, printability, and build difficulty.
 3. Max-output / modular winners are promoted into **MAX-Versions**.
 
+
+## Print packs (one-plate)
+
+Every kit below ships a **one-plate print pack** with preview for the Kobra 3 Max (usable 410×410 mm):
+
+See **[`print-packs/`](print-packs/)** — Gen-E / Gen-B / Gen-D champions plus Gen-A / Gen-C / Gen-F.
+
+Each pack includes:
+
+- `one-plate/one_plate_layout.stl` — full kit nested flat on Z=0
+- `one-plate/preview.png` — labeled top-down plate map
+- `one-plate/PLATE.md` — quantities, bed-fit confirmation, print notes
+- `parts/` — individual STLs with `_xN` qty in the filename
+
 ## License
 
 MIT — same as the generators companion repo. See [LICENSE](LICENSE).
