@@ -92,3 +92,11 @@ Wire envelope for all MAX kits: **26 AWG** or **30 AWG** from the shared spool c
 | Radial modular path | `champions/2026-09-18-gen-d/` |
 
 When promoting a new nightly design into MAX-Versions, update this file only if dimensions deliberately diverge — otherwise keep compatibility.
+
+## 8. 2026-09-19 additions
+
+| Design | Interface notes |
+|--------|-----------------|
+| Gen-G Halbach barrel | Shaft Ø8 / 608ZZ Ø21.85 unchanged. Annulus bolt circle **6× @ R≈54 mm** (M3). Dual radial gaps **1.0–1.5 mm**. Outer drum OD / inner hub OD per SCAD in `champions/2026-09-19-gen-g/`. |
+| Gen-H unequal 10+6 | Gen-E endbell family **6× @ R=72**. Dual AFPM magnet-to-magnet **~7 mm**. Rotor: 5 outer @ R=56 + 3 inner @ R=28 per carrier. |
+| Gen-I claw/Lundell | Gen-B endbell family **6× @ R=60**. Single rotor; claw steel fingers are bought parts guided by printed `claw_return_ring`. |
