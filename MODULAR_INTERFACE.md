@@ -100,3 +100,16 @@ When promoting a new nightly design into MAX-Versions, update this file only if 
 | Gen-G Halbach barrel | Shaft Ø8 / 608ZZ Ø21.85 unchanged. Annulus bolt circle **6× @ R≈54 mm** (M3). Dual radial gaps **1.0–1.5 mm**. Outer drum OD / inner hub OD per SCAD in `champions/2026-09-19-gen-g/`. |
 | Gen-H unequal 10+6 | Gen-E endbell family **6× @ R=72**. Dual AFPM magnet-to-magnet **~7 mm**. Rotor: 5 outer @ R=56 + 3 inner @ R=28 per carrier. |
 | Gen-I claw/Lundell | Gen-B endbell family **6× @ R=60**. Single rotor; claw steel fingers are bought parts guided by printed `claw_return_ring`. |
+
+## 8. Gen-J dual-stator sandwich (2026-09-20)
+
+| Feature | Value |
+|---------|-------|
+| Endbell / stator bolts | **6× M3 @ R=72** (Gen-E family) |
+| Brace | **4× M4 @ R≈68** |
+| Rotor | Single dual-face carrier OD **148**, thick **12 mm** |
+| Stators | **2×** identical cores, **9** pancake stations each (9+9 one-plate) |
+| Air gap | Magnet→former **2.5–3.5 mm** each side (printed gap pads) |
+| Shaft / 608 | Same MAX baseline Ø8 / Ø21.85 |
+
+Interchange: Gen-J endbells swap with Gen-E/H family at R=72. Not bolt-compatible with Gen-G barrel R=54 or Gen-B R=60 without an adapter plate.

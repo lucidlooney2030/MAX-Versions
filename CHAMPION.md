@@ -1,55 +1,54 @@
 # Current champion — MAX-Versions
 
-**As of 2026-09-19 (ET)** — ranked by estimated matched power @ **200 RPM** (order-of-magnitude, not FEA/dyno).
+**As of 2026-09-20 (ET)** — ranked by estimated matched power @ **200 RPM** (order-of-magnitude, not FEA/dyno).
 
-## #1 — Gen-G Halbach barrel dual-radial
+## #1 — Gen-J Dual-stator sandwich AFPM
+
+| | |
+|--|--|
+| **Design** | Gen-J — dual-stator sandwich / 9+9 coil 3φ (18 formers, wider windows) |
+| **Est. power @200 RPM** | **~5–11 W** (matched resistive load) |
+| **Folder** | [`champions/2026-09-20-gen-j/`](champions/2026-09-20-gen-j/) |
+| **Why #1** | Both faces of a single magnet rotor harvested by two stator packs at magnet-to-former ~2.5–3.5 mm, plus full 48× Ø5 Halbach and more copper than Gen-G’s 12-bobbin annulus. Mid/upper band beats Gen-G ~4–9 W. |
+
+**Topology sketch:** Rotor 8× Ø20 on +Z + 8× Ø20 on −Z (offset 22.5°) with 24 Ø5 Halbach per face; two stator cores (9 pancakes each); Gen-E endbell family **6× M3 @ R=72**; gap pads ×12; prefer **26 AWG**.
+
+**Build note:** Single rotor = lower clap than dual AFPM, but brace both stators before seating the second magnet face. Print dual-pocket + 608 + gap-pad fit coupon first. One-plate uses **9+9** (not 12+12) so the kit fits 410×410 — wider formers recover copper.
+
+**Print pack:** [`print-packs/gen-j-dual-stator-sandwich/one-plate/`](print-packs/gen-j-dual-stator-sandwich/one-plate/)
+
+## Strong contender — Gen-K outer-bias barrel
+
+| | |
+|--|--|
+| **Design** | Gen-K — outer-bias Halbach barrel 14+2 / 12-coil |
+| **Est. power @200 RPM** | **~4.5–10 W** |
+| **Folder** | Night sources: `/workspace/generators/2026-09-20/gen-k-outer-bias-barrel/` |
+| **Role** | Gen-G evolution; more outer tip-speed flux + taller drum (34 mm). Barrel family R=54. |
+
+## Prior champion — Gen-G Halbach barrel dual-radial
 
 | | |
 |--|--|
 | **Design** | Gen-G — cylindrical Halbach dual-radial barrel / 12-coil 3φ |
-| **Est. power @200 RPM** | **~4–9 W** (matched resistive load) |
+| **Est. power @200 RPM** | **~4–9 W** |
 | **Folder** | [`champions/2026-09-19-gen-g/`](champions/2026-09-19-gen-g/) |
-| **Why #1** | Dual cylindrical radial air gaps (1.0–1.5 mm) + outer tip speed beat Gen-E’s dual axial nested-ring band (~3–7 W). Outer 12× Ø20 inward + inner 4× Ø20 outward with full 48× Ø5 Halbach assist. |
+| **Role** | Prior overall #1; still strong dual-radial reference. Superseded on estimated watts by Gen-J. |
 
-**Topology sketch:** Outer drum 12× Ø20 radial-in + 24× Ø5 OD Halbach; inner hub 4× Ø20 radial-out + 24× Ø5; annular 12-bobbin stator between; prefer **26 AWG**.
-
-**Build note:** Keep both radial gaps ≤1.5 mm after seating. Print magnet/bearing fit coupon before full barrel. Less axial clap than dual AFPM, but concentricity matters.
-
-**Print pack:** [`print-packs/gen-g-halbach-barrel/one-plate/`](print-packs/gen-g-halbach-barrel/one-plate/)
-
-## Strong AFPM contender — Gen-H unequal 10+6
+## Vernier experiment — Gen-L
 
 | | |
 |--|--|
-| **Design** | Gen-H — dual-rotor AFPM unequal 10+6 nested / 12-coil 3φ |
-| **Est. power @200 RPM** | **~3.5–8 W** |
-| **Folder** | [`champions/2026-09-19-gen-h/`](champions/2026-09-19-gen-h/) |
-| **Role** | Contends with prior Gen-E; denser 12-coil copper; Gen-E endbell family (6× @ R=72). Dual-rotor clap hazard — braces first. |
+| **Design** | Gen-L — magnetic vernier dual AFPM 16-pole / 18-coil |
+| **Est. power @200 RPM** | **~3.5–9 W** |
+| **Folder** | Night sources: `/workspace/generators/2026-09-20/gen-l-vernier-afpm/` |
+| **Role** | Frequency play (Ns/Nr=18/16); Gen-B R=60; dual-rotor clap — braces first. |
 
-## Prior champion — Gen-E nested dual-ring
+## Prior champions (archive)
 
-| | |
-|--|--|
-| **Design** | Gen-E — nested dual-ring AFPM / 9-coil 3φ |
-| **Est. power @200 RPM** | **~3–7 W** |
-| **Folder** | [`champions/2026-09-18-gen-e/`](champions/2026-09-18-gen-e/) |
-| **Role** | Prior overall #1; still strong dual-AFPM reference. Superseded on estimated watts by Gen-G. |
-
-## Modular baseline — Gen-B
-
-| | |
-|--|--|
-| **Design** | Gen-B — dual-rotor AFPM 8+8 / 12-coil 3φ |
-| **Folder** | [`champions/2026-09-17-gen-b/`](champions/2026-09-17-gen-b/) |
-| **Role** | Interface reference for shaft / 608ZZ / brace / former stack. |
-
-## Radial alternate — Gen-D
-
-| | |
-|--|--|
-| **Design** | Gen-D — radial-flux outrunner / 12-coil |
-| **Folder** | [`champions/2026-09-18-gen-d/`](champions/2026-09-18-gen-d/) |
-| **Role** | Best first *radial* modular path (single gap); Gen-G is the dual-radial max-watt evolution. |
+- Gen-E nested dual-ring (~3–7 W) — [`champions/2026-09-18-gen-e/`](champions/2026-09-18-gen-e/)
+- Gen-B dual 8+8 — interface reference [`champions/2026-09-17-gen-b/`](champions/2026-09-17-gen-b/)
+- Gen-D radial outrunner — [`champions/2026-09-18-gen-d/`](champions/2026-09-18-gen-d/)
 
 ## How ranking works
 
