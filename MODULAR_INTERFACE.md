@@ -58,7 +58,8 @@ Large-magnet pitch (for reference, not required for swap): Gen-B **R_large = 50 
 
 | Topology | Target gap | Stack notes |
 |----------|------------|-------------|
-| Dual AFPM (Gen-B, Gen-E) | **~7 mm magnet-to-magnet** | Each side ~2.5–3.5 mm coil + clearance; do not go below ~**5 mm** without thicker braces |
+| Dual AFPM (legacy Gen-B/E) | **withdrawn ~7 mm M2M** | Must reopen to `coil_envelope_h + 2×run_clear` (see Gen-O / WOUND_COIL_RULE) |
+| Gen-M sandwich | Magnet→**wound** **0.85 mm** | `gap_spacer_h = run_clear + wind_build_axial`; not bare former |
 | Radial outrunner (Gen-D) | **~1.0–2.0 mm** magnet-to-tooth | Rotor OD 116 / stator ID 120 → ~2 mm geometric; aim 1.0–1.5 after seating |
 
 **Axial brace (dual AFPM):** **4× M4** threaded rod through brace holes (Gen-A/B stator brace radius **R ≈ 55 mm**, clear **Ø4.3**). Install **before** magnetting the second rotor.
@@ -103,15 +104,20 @@ When promoting a new nightly design into MAX-Versions, update this file only if 
 | Gen-H unequal 10+6 | Gen-E endbell family **6× @ R=72**. Dual AFPM magnet-to-magnet **~7 mm**. Rotor: 5 outer @ R=56 + 3 inner @ R=28 per carrier. |
 | Gen-I claw/Lundell | Gen-B endbell family **6× @ R=60**. Single rotor; claw steel fingers are bought parts guided by printed `claw_return_ring`. |
 
-## 8. Gen-J dual-stator sandwich (2026-09-20)
+## 8. Gen-J dual-stator sandwich (2026-09-20) — WITHDRAWN
+
+Withdrawn for bare-former gap language. Superseded by Gen-M.
+
+## 9. Gen-M dual-stator sandwich — wound-aware (2026-09-20) CHAMPION
 
 | Feature | Value |
 |---------|-------|
 | Endbell / stator bolts | **6× M3 @ R=72** (Gen-E family) |
 | Brace | **4× M4 @ R≈68** |
 | Rotor | Single dual-face carrier OD **148**, thick **12 mm** |
-| Stators | **2×** identical cores, **9** pancake stations each (9+9 one-plate) |
-| Air gap | Magnet→former **2.5–3.5 mm** each side (printed gap pads) |
+| Stators | **2×** cores, **9** pancake stations each (9+9 one-plate) |
+| Wire budget | 26 AWG × 120 t; `wind_build_axial`=0.945; `coil_envelope_h`=7.09 |
+| Air gap | Magnet→**wound** **0.85 mm**; `gap_spacer_h`=1.795 mm |
 | Shaft / 608 | Same MAX baseline Ø8 / Ø21.85 |
 
-Interchange: Gen-J endbells swap with Gen-E/H family at R=72. Not bolt-compatible with Gen-G barrel R=54 or Gen-B R=60 without an adapter plate.
+Interchange: Gen-M endbells swap with Gen-E family at R=72.

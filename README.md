@@ -6,9 +6,14 @@ Companion to nightly `generators` exploration archives. This repo keeps the modu
 
 ## Status (2026-09-20 ET)
 
-**No current champion.** Gen-A–L were withdrawn for failing the wound-coil envelope rule (gaps/slots sized to bare former STLs). See **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)** and **[CHAMPION.md](CHAMPION.md)**.
+**Champion: Gen-M dual-stator sandwich (wound-aware)** — the **first wound-compliant MAX kit**.
 
-Do not print withdrawn kits expecting README air gaps to survive a full copper wind.
+See **[CHAMPION.md](CHAMPION.md)** and **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)**. Prior Gen-A–L were withdrawn for sizing gaps/slots to bare former STLs.
+
+| Kit | Path |
+|-----|------|
+| Champion | [`champions/2026-09-20-gen-m-wound/`](champions/2026-09-20-gen-m-wound/) |
+| One-plate pack | [`print-packs/gen-m-dual-stator-wound/`](print-packs/gen-m-dual-stator-wound/) |
 
 ## Magnet kit (fixed)
 
@@ -24,7 +29,7 @@ Pockets are typically **Ø20.3 × 5.2** and **Ø5.3 × 5.2** for print clearance
 - **26 AWG** — insulated OD ≈ **0.45 mm** (audit assumption)
 - **30 AWG** — insulated OD ≈ **0.30 mm** (audit assumption)
 
-Use ~1 lb hobby spool class for a full machine; document turns, interconnect (star 3φ preferred), and **wound envelope** used for stack sizing.
+Document turns, interconnect (star 3φ preferred), and **wound envelope** used for stack sizing. Gen-M: **120 t × 26 AWG** per pancake.
 
 ## Printer
 
@@ -36,7 +41,7 @@ Use ~1 lb hobby spool class for a full machine; document turns, interconnect (st
 
 Shared mechanical stack (shaft Ø8, 608ZZ, bolt circles, etc.): **[MODULAR_INTERFACE.md](MODULAR_INTERFACE.md)**.
 
-Future kits must also satisfy **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)** before promotion to `champions/`.
+Kits must satisfy **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)** before promotion to `champions/`.
 
 ## License
 

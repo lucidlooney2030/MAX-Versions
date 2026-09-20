@@ -1,5 +1,7 @@
 # Champions
 
-Empty — no current champion (wound-coil envelope withdrawal, 2026-09-20 ET).
+Current: **[2026-09-20-gen-m-wound](2026-09-20-gen-m-wound/)** — Gen-M dual-stator sandwich, first wound-compliant MAX kit.
 
-See [../CHAMPION.md](../CHAMPION.md) and [../WOUND_COIL_RULE.md](../WOUND_COIL_RULE.md).
+Runners (PASS, same night): [runners-2026-09-20/](runners-2026-09-20/).
+
+Withdrawn Gen-A–L folders were removed 2026-09-20 ET.

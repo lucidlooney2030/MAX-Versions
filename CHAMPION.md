@@ -1,25 +1,33 @@
 # Current champion — MAX-Versions
 
-**As of 2026-09-20 (ET): there is no current champion.**
+**As of 2026-09-20 (ET): Gen-M dual-stator sandwich — first wound-compliant MAX kit.**
 
-All prior Gen-A–L kits (nights 2026-09-17 through 2026-09-20) were **withdrawn** after failing the **wound-coil envelope** gate. Coil formers are wound with copper **before** assembly; air gaps, stator pockets, radial annuli, and endbell stacks must be sized for the **wound envelope**, not bare former STL dims.
+Path: [`champions/2026-09-20-gen-m-wound/`](champions/2026-09-20-gen-m-wound/)  
+Print pack: [`print-packs/gen-m-dual-stator-wound/`](print-packs/gen-m-dual-stator-wound/)
 
-## Gate (must pass before any future champion)
+Gen-M is the wound-aware evolution of withdrawn Gen-J (best prior watts estimate). Coil formers are wound **before** assembly; air gaps and stator bays use an explicit copper envelope.
 
-See **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)**.
+## Wound math summary (26 AWG × 120 t)
 
-- Explicit budget in README/SCAD: `wind_build`, `wound_h`, or `coil_envelope` (with AWG + turns).
-- Magnet face ↔ **wound** coil face ≥ **0.5–1.0 mm** running clearance after winding.
-- Assumptions: 26 AWG ≈ 0.45 mm OD; 30 AWG ≈ 0.30 mm OD; pancake axial build ≈ layers × OD × fill≈0.7 on both faces.
+| Param | Value |
+|-------|-------|
+| `wire_od` | 0.45 mm |
+| `fill` | 0.70 |
+| `layers_per_face` | 3 |
+| `wind_build_axial` | **0.945 mm** / face |
+| `former_web` / `flange_t` | 3.2 / 1.0 mm |
+| `coil_envelope_h` | **7.09 mm** |
+| `run_clear` | **0.85 mm** (magnet → **wound**) |
+| `gap_spacer_h` | **1.795 mm** |
+| Coils | 9+9 pancakes, dual-face Halbach rotor |
 
-## Withdrawn (do not build)
+Gate: **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)** — **PASS**.
 
-| Was | Design | Why pulled |
-|-----|--------|------------|
-| Gen-A…L | All nightly kits + prior champions | Gaps/slots sized to bare former; no wound envelope budget |
+## Runners (same night, also PASS)
 
-Champion folders under `champions/` and kit mirrors under `print-packs/` were removed from this repo pending redesign.
+- Gen-N wound-aware Halbach barrel — see `champions/runners-2026-09-20/`
+- Gen-O wound-aware dual-rotor AFPM (M2M ≈ 9.79 mm)
 
-## Next step
+## Withdrawn
 
-Redesign must reopen stack heights and pockets around an explicit wound envelope, then re-promote a kit here and update this file. Until then: **no champion**.
+Gen-A–L (nights 2026-09-17…20) remain withdrawn for bare-former gap sizing.

@@ -1,5 +1,5 @@
 # Print packs
 
-All Gen-A–J one-plate print packs were **removed 2026-09-20 (ET)** after failing the wound-coil envelope gate.
+- **[gen-m-dual-stator-wound](gen-m-dual-stator-wound/)** — one-plate layout + preview for Gen-M champion (Kobra 3 Max ~410×410).
 
-See [../WOUND_COIL_RULE.md](../WOUND_COIL_RULE.md). Packs will return when a redesigned kit passes the gate.
+Wind all coil formers before assembly. See kit README wound envelope table.
