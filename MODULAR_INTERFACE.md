@@ -1,3 +1,5 @@
+> **Gate:** kits must also satisfy [WOUND_COIL_RULE.md](WOUND_COIL_RULE.md) (wound envelope, not bare former). Gen-A–L withdrawn 2026-09-20 ET.
+
 # Modular interface — MAX stack
 
 Shared mechanical stack so rotors, stators, endbells, and coil formers can swap across MAX designs. Numbers below are taken from the Gen-A/B (2026-09-17) and Gen-D/E (2026-09-18) OpenSCAD sources under `/workspace/generators/`.
