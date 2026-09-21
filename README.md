@@ -1,5 +1,8 @@
 # MAX-Versions
 
+**Current tip (2026-09-20-night):** Gen-P dual-rotor thin-gap — see [CHAMPION.md](CHAMPION.md).
+
+
 **Maximum-electricity**, **modular** generator kits — printable magnetic generators tuned for **max watts always**.
 
 Companion to nightly `generators` exploration archives. This repo keeps the modular max-output line — shared interfaces, current champion, and drop-in kits.
