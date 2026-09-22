@@ -1,37 +1,40 @@
 # Current champion — MAX-Versions
 
-**As of 2026-09-20-night (ET ~9:02 PM): Gen-P dual-rotor thin-gap AFPM — wound-compliant MAX tip.**
+**As of 2026-09-21-night (ET ~9:02 PM): Gen-S dual-rotor ultra-thin AFPM — wound-compliant MAX tip.**
 
-Path: [`champions/2026-09-20-night-gen-p-dual-rotor-thin/`](champions/2026-09-20-night-gen-p-dual-rotor-thin/)  
-Print pack: [`print-packs/gen-p-dual-rotor-thin/`](print-packs/gen-p-dual-rotor-thin/)
+Path: [`champions/2026-09-21-gen-s-dual-rotor-ultrathin/`](champions/2026-09-21-gen-s-dual-rotor-ultrathin/)  
+Print pack: [`print-packs/gen-s-dual-rotor-ultrathin/`](print-packs/gen-s-dual-rotor-ultrathin/)
 
-Gen-P **dethrones Gen-M** on estimated watts (~7–15 W vs ~5–12 W @200 RPM): dual magnet faces across a **thin** wound mid-stator (`m2m=7.26 mm`) restore B while magnet↔wound stays **0.80 mm PASS**.
+Gen-S **dethrones Gen-P** on estimated watts (~8–17 W vs ~7–15 W @200 RPM): dual magnet faces across an **ultra-thin** wound mid-stator (`m2m=6.66 mm` vs Gen-P 7.26) + larger copper window + 130 t while magnet↔wound stays **0.80 mm PASS**.
 
-## Wound math summary (26 AWG × 120 t, 12 pancakes)
+## Wound math summary (26 AWG × 130 t, 12 pancakes)
 
 | Param | Value |
 |-------|-------|
 | `wire_od` | 0.45 mm |
 | `fill` | 0.70 |
-| `layers_per_face` | **2** (thinner than Gen-M’s 3) |
+| `layers_per_face` | **2** |
 | `wind_build_axial` | **0.63 mm** / face |
-| `former_web` / `flange_t` | 2.6 / 0.9 mm |
-| `coil_envelope_h` | **5.66 mm** |
+| `former_web` / `flange_t` | **2.2 / 0.8 mm** (thinner than Gen-P) |
+| `coil_envelope_h` | **5.06 mm** |
 | `run_clear` | **0.80 mm** (magnet → **wound**, each gap) |
-| `m2m` | **7.26 mm** = envelope + 2×run_clear |
+| `m2m` | **6.66 mm** = envelope + 2×run_clear |
 | `gap_spacer_h` | **1.43 mm** |
 | Magnets | 8+8 Ø20 + 24+24 Ø5 Halbach (full kit) |
 
-Gate: **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)** — **PASS**.
+Gate: **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)** — **PASS**.  
+Night envelope: **[WOUND_ENVELOPE_2026-09-21.md](WOUND_ENVELOPE_2026-09-21.md)**
 
 ## Runners (same night, also PASS)
 
-- Gen-R vernier AFPM — `champions/runners-2026-09-20-night/gen-r-vernier-afpm/` (~5.5–12 W)
-- Gen-Q concentric Halbach barrel — `champions/runners-2026-09-20-night/gen-q-concentric-barrel/` (~4.5–10 W)
+- Gen-T triple-gap sandwich — `champions/runners-2026-09-21/gen-t-triple-gap-sandwich/` (~6.5–14 W)
+- Gen-U vernier flux-claw — `champions/runners-2026-09-21/gen-u-vernier-fluxclaw/` (~5.5–12 W)
 
 ## Prior champion (still valid wound kit)
 
-Gen-M dual-stator sandwich — `champions/2026-09-20-gen-m-wound/` (~5–12 W @200). Kept as archive / alternate single-rotor build.
+Gen-P dual-rotor thin-gap — `champions/2026-09-20-night-gen-p-dual-rotor-thin/` (~7–15 W @200). Archived as previous tip.
+
+Gen-M dual-stator sandwich — `champions/2026-09-20-gen-m-wound/` (~5–12 W @200).
 
 ## Withdrawn
 
