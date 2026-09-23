@@ -1,7 +1,7 @@
 # Champions
 
-Current: **[2026-09-20-gen-m-wound](2026-09-20-gen-m-wound/)** — Gen-M dual-stator sandwich, first wound-compliant MAX kit.
+Current MAX tip: **[2026-09-22-gen-v-dual-rotor-nanogap](2026-09-22-gen-v-dual-rotor-nanogap/)** (~9–19 W @200 RPM, m2m=6.16, magnet↔wound=0.70 PASS).
 
-Runners (PASS, same night): [runners-2026-09-20/](runners-2026-09-20/).
+Prior: [2026-09-21-gen-s-dual-rotor-ultrathin](2026-09-21-gen-s-dual-rotor-ultrathin/), [2026-09-20-night-gen-p-dual-rotor-thin](2026-09-20-night-gen-p-dual-rotor-thin/), [2026-09-20-gen-m-wound](2026-09-20-gen-m-wound/).
 
-Withdrawn Gen-A–L folders were removed 2026-09-20 ET.
+Runners: [runners-2026-09-22](runners-2026-09-22/), [runners-2026-09-21](runners-2026-09-21/), [runners-2026-09-20-night](runners-2026-09-20-night/).

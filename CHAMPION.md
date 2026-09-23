@@ -1,13 +1,13 @@
 # Current champion — MAX-Versions
 
-**As of 2026-09-21-night (ET ~9:02 PM): Gen-S dual-rotor ultra-thin AFPM — wound-compliant MAX tip.**
+**As of 2026-09-22-night (ET ~9:02 PM): Gen-V dual-rotor nano-gap AFPM — wound-compliant MAX tip.**
 
-Path: [`champions/2026-09-21-gen-s-dual-rotor-ultrathin/`](champions/2026-09-21-gen-s-dual-rotor-ultrathin/)  
-Print pack: [`print-packs/gen-s-dual-rotor-ultrathin/`](print-packs/gen-s-dual-rotor-ultrathin/)
+Path: [`champions/2026-09-22-gen-v-dual-rotor-nanogap/`](champions/2026-09-22-gen-v-dual-rotor-nanogap/)  
+Print pack: [`print-packs/gen-v-dual-rotor-nanogap/`](print-packs/gen-v-dual-rotor-nanogap/)
 
-Gen-S **dethrones Gen-P** on estimated watts (~8–17 W vs ~7–15 W @200 RPM): dual magnet faces across an **ultra-thin** wound mid-stator (`m2m=6.66 mm` vs Gen-P 7.26) + larger copper window + 130 t while magnet↔wound stays **0.80 mm PASS**.
+Gen-V **dethrones Gen-S** on estimated watts (~9–19 W vs ~8–17 W @200 RPM): dual magnet faces across a **nano-gap** wound mid-stator (`m2m=6.16 mm` vs Gen-S 6.66) + larger copper window + 140 t while magnet↔wound stays **0.70 mm PASS**.
 
-## Wound math summary (26 AWG × 130 t, 12 pancakes)
+## Wound math summary (26 AWG × 140 t, 12 pancakes)
 
 | Param | Value |
 |-------|-------|
@@ -15,26 +15,26 @@ Gen-S **dethrones Gen-P** on estimated watts (~8–17 W vs ~7–15 W @200 RPM): 
 | `fill` | 0.70 |
 | `layers_per_face` | **2** |
 | `wind_build_axial` | **0.63 mm** / face |
-| `former_web` / `flange_t` | **2.2 / 0.8 mm** (thinner than Gen-P) |
-| `coil_envelope_h` | **5.06 mm** |
-| `run_clear` | **0.80 mm** (magnet → **wound**, each gap) |
-| `m2m` | **6.66 mm** = envelope + 2×run_clear |
-| `gap_spacer_h` | **1.43 mm** |
-| Magnets | 8+8 Ø20 + 24+24 Ø5 Halbach (full kit) |
+| `former_web` / `flange_t` | **2.0 / 0.75 mm** (thinner than Gen-S) |
+| `coil_envelope_h` | **4.76 mm** |
+| `run_clear` | **0.70 mm** (magnet → **wound**, each gap) |
+| `m2m` | **6.16 mm** = envelope + 2×run_clear |
+| `gap_spacer_h` | **1.33 mm** |
+| Magnets | 8+8 Ø20 @ R=52 + 24+24 Ø5 Halbach (full kit) |
 
 Gate: **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)** — **PASS**.  
-Night envelope: **[WOUND_ENVELOPE_2026-09-21.md](WOUND_ENVELOPE_2026-09-21.md)**
+Night envelope: **[WOUND_ENVELOPE_2026-09-22.md](WOUND_ENVELOPE_2026-09-22.md)**
 
 ## Runners (same night, also PASS)
 
-- Gen-T triple-gap sandwich — `champions/runners-2026-09-21/gen-t-triple-gap-sandwich/` (~6.5–14 W)
-- Gen-U vernier flux-claw — `champions/runners-2026-09-21/gen-u-vernier-fluxclaw/` (~5.5–12 W)
+- Gen-W triple-rotor dual-stator — `champions/runners-2026-09-22/gen-w-triple-rotor-dual-stator/` (~7–15 W)
+- Gen-X vernier flux-claw dual — `champions/runners-2026-09-22/gen-x-vernier-fluxclaw-dual/` (~6–13 W)
 
 ## Prior champion (still valid wound kit)
 
-Gen-P dual-rotor thin-gap — `champions/2026-09-20-night-gen-p-dual-rotor-thin/` (~7–15 W @200). Archived as previous tip.
+Gen-S dual-rotor ultra-thin — `champions/2026-09-21-gen-s-dual-rotor-ultrathin/` (~8–17 W @200). Archived as previous tip.
 
-Gen-M dual-stator sandwich — `champions/2026-09-20-gen-m-wound/` (~5–12 W @200).
+Gen-P dual-rotor thin-gap — `champions/2026-09-20-night-gen-p-dual-rotor-thin/` (~7–15 W @200).
 
 ## Withdrawn
 
@@ -42,4 +42,4 @@ Gen-A–L remain withdrawn for bare-former gap sizing.
 
 ## Safety
 
-**DUAL-ROTOR CLAP** — brace with M4 rods before seating the second magnet face. Wind all formers before assembly.
+**DUAL-ROTOR CLAP** — brace with M4 rods before seating the second magnet face. Nano-gap (0.70 mm) leaves less forgiveness. Wind all formers before assembly.
