@@ -1,23 +1,23 @@
 # MAX-Versions
 
-**Current tip (2026-09-23-night):** Gen-Y dual-rotor micro-gap — see [CHAMPION.md](CHAMPION.md).
+**Current tip (2026-09-24-night):** Gen-AB dual-rotor ultra-micro-gap — see [CHAMPION.md](CHAMPION.md).
 
 
 **Maximum-electricity**, **modular** generator kits — printable magnetic generators tuned for **max watts always**.
 
 Companion to nightly `generators` exploration archives. This repo keeps the modular max-output line — shared interfaces, current champion, and drop-in kits.
 
-## Status (2026-09-23 ET)
+## Status (2026-09-24 ET)
 
-**Champion: Gen-Y dual-rotor micro-gap AFPM (wound-aware)** — dethrones Gen-V (~10–21 W vs ~9–19 W @200 RPM; m2m 5.76 vs 6.16).
+**Champion: Gen-AB dual-rotor ultra-micro-gap AFPM (wound-aware)** — dethrones Gen-Y (~11–23 W vs ~10–21 W @200 RPM; m2m 5.22 vs 5.76).
 
 See **[CHAMPION.md](CHAMPION.md)** and **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)**. Prior Gen-A–L were withdrawn for sizing gaps/slots to bare former STLs.
 
 | Kit | Path |
 |-----|------|
-| Champion | [`champions/2026-09-23-gen-y-dual-rotor-microgap/`](champions/2026-09-23-gen-y-dual-rotor-microgap/) |
-| One-plate pack | [`print-packs/gen-y-dual-rotor-microgap/`](print-packs/gen-y-dual-rotor-microgap/) |
-| Night runners | [`champions/runners-2026-09-23/`](champions/runners-2026-09-23/) |
+| Champion | [`champions/2026-09-24-gen-ab-dual-rotor-ultramicro/`](champions/2026-09-24-gen-ab-dual-rotor-ultramicro/) |
+| One-plate pack | [`print-packs/gen-ab-dual-rotor-ultramicro/`](print-packs/gen-ab-dual-rotor-ultramicro/) |
+| Night runners | [`champions/runners-2026-09-24/`](champions/runners-2026-09-24/) |
 
 ## Magnet kit (fixed)
 
@@ -33,7 +33,7 @@ Pockets are typically **Ø20.3 × 5.2** and **Ø5.3 × 5.2** for print clearance
 - **26 AWG** — insulated OD ≈ **0.45 mm** (audit assumption)
 - **30 AWG** — insulated OD ≈ **0.30 mm** (audit assumption)
 
-Document turns, interconnect (star 3φ preferred), and **wound envelope** used for stack sizing. Gen-Y: **150 t × 26 AWG** per pancake.
+Document turns, interconnect (star 3φ preferred), and **wound envelope** used for stack sizing. Gen-AB: **160 t × 26 AWG** per pancake.
 
 ## Printer
 
