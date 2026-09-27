@@ -1,23 +1,24 @@
 # MAX-Versions
 
-**Current tip (2026-09-25-night):** Gen-AE dual-rotor hyper-micro-gap — see [CHAMPION.md](CHAMPION.md).
+**Current tip (2026-09-26-night):** Gen-AH dual-rotor copper-centroid hypermicro — see [CHAMPION.md](CHAMPION.md).
 
 
 **Maximum-electricity**, **modular** generator kits — printable magnetic generators tuned for **max watts always**.
 
 Companion to nightly `generators` exploration archives. This repo keeps the modular max-output line — shared interfaces, current champion, and drop-in kits.
 
-## Status (2026-09-25 ET)
+## Status (2026-09-26 ET)
 
-**Champion: Gen-AE dual-rotor hyper-micro-gap AFPM (wound-aware)** — dethrones Gen-AB (~12–26 W vs ~11–23 W @200 RPM; m2m 5.00 vs 5.22).
+**Champion: Gen-AH dual-rotor copper-centroid hypermicro AFPM (wound-aware)** — dethrones Gen-AE (~13–28 W vs ~12–26 W @200 RPM; m2m 4.96 vs 5.00; Ø20 @ R=41 over copper centroid; one-plate 404×404 ≤408).
 
 See **[CHAMPION.md](CHAMPION.md)** and **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)**. Prior Gen-A–L were withdrawn for sizing gaps/slots to bare former STLs.
 
 | Kit | Path |
 |-----|------|
-| Champion | [`champions/2026-09-25-gen-ae-dual-rotor-hypermicro/`](champions/2026-09-25-gen-ae-dual-rotor-hypermicro/) |
-| One-plate pack | [`print-packs/gen-ae-dual-rotor-hypermicro/`](print-packs/gen-ae-dual-rotor-hypermicro/) |
-| Night runners | [`champions/runners-2026-09-25/`](champions/runners-2026-09-25/) |
+| Champion | [`champions/2026-09-26-gen-ah-dual-rotor-coppercentroid/`](champions/2026-09-26-gen-ah-dual-rotor-coppercentroid/) |
+| One-plate pack | [`print-packs/gen-ah-dual-rotor-coppercentroid/`](print-packs/gen-ah-dual-rotor-coppercentroid/) |
+| Night runners | [`champions/runners-2026-09-26/`](champions/runners-2026-09-26/) |
+| Prior champion | [`champions/2026-09-25-gen-ae-dual-rotor-hypermicro/`](champions/2026-09-25-gen-ae-dual-rotor-hypermicro/) |
 
 ## Magnet kit (fixed)
 
@@ -33,13 +34,14 @@ Pockets are typically **Ø20.3 × 5.2** and **Ø5.3 × 5.2** for print clearance
 - **26 AWG** — insulated OD ≈ **0.45 mm** (audit assumption)
 - **30 AWG** — insulated OD ≈ **0.30 mm** (audit assumption)
 
-Document turns, interconnect (star 3φ preferred), and **wound envelope** used for stack sizing. Gen-AE: **170 t × 26 AWG** per pancake.
+Document turns, interconnect (star 3φ preferred), and **wound envelope** used for stack sizing. Gen-AH: **180 t × 26 AWG** per pancake.
 
 ## Printer
 
 - **Anycubic Kobra 3 Max Combo**
 - Filament **1.75 mm** (PETG/ABS preferred; PLA OK for prototypes)
 - Nozzles: **0.4 mm** default for carriers / formers; **0.6 / 0.8 mm** OK for endbells and coarse shells
+- One-plate usable bed: **≤408×408 mm** (not full 420 — Gen-AE first plate at 440 failed)
 
 ## Modular interface
 
