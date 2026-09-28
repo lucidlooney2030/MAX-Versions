@@ -1,7 +1,7 @@
-# Champions
+# MAX-Versions champions
 
-Current MAX tip: **[2026-09-25-gen-ae-dual-rotor-hypermicro](2026-09-25-gen-ae-dual-rotor-hypermicro/)** (~12–26 W @200 RPM, m2m=5.00, magnet↔wound=0.52 PASS).
+**Current tip (2026-09-27-night ET):** [`2026-09-27-gen-ak-dual-rotor-coppercentroid-ultra/`](2026-09-27-gen-ak-dual-rotor-coppercentroid-ultra/) — Gen-AK dual-rotor copper-centroid ultra (~14–30 W @200 RPM).
 
-Prior: [2026-09-24-gen-ab-dual-rotor-ultramicro](2026-09-24-gen-ab-dual-rotor-ultramicro/), [2026-09-23-gen-y-dual-rotor-microgap](2026-09-23-gen-y-dual-rotor-microgap/), [2026-09-22-gen-v-dual-rotor-nanogap](2026-09-22-gen-v-dual-rotor-nanogap/), [2026-09-21-gen-s-dual-rotor-ultrathin](2026-09-21-gen-s-dual-rotor-ultrathin/), [2026-09-20-night-gen-p-dual-rotor-thin](2026-09-20-night-gen-p-dual-rotor-thin/), [2026-09-20-gen-m-wound](2026-09-20-gen-m-wound/).
+Prior tip: [`2026-09-26-gen-ah-dual-rotor-coppercentroid/`](2026-09-26-gen-ah-dual-rotor-coppercentroid/) — Gen-AH (~13–28 W).
 
-Runners: [runners-2026-09-25](runners-2026-09-25/), [runners-2026-09-24](runners-2026-09-24/), [runners-2026-09-23](runners-2026-09-23/), [runners-2026-09-22](runners-2026-09-22/), [runners-2026-09-21](runners-2026-09-21/), [runners-2026-09-20-night](runners-2026-09-20-night/).
+Same-night runners: [`runners-2026-09-27/`](runners-2026-09-27/).

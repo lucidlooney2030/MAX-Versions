@@ -1,23 +1,23 @@
 # MAX-Versions
 
-**Current tip (2026-09-26-night):** Gen-AH dual-rotor copper-centroid hypermicro — see [CHAMPION.md](CHAMPION.md).
+**Current tip (2026-09-27-night):** Gen-AK dual-rotor copper-centroid ultra — see [CHAMPION.md](CHAMPION.md).
 
 
 **Maximum-electricity**, **modular** generator kits — printable magnetic generators tuned for **max watts always**.
 
 Companion to nightly `generators` exploration archives. This repo keeps the modular max-output line — shared interfaces, current champion, and drop-in kits.
 
-## Status (2026-09-26 ET)
+## Status (2026-09-27 ET)
 
-**Champion: Gen-AH dual-rotor copper-centroid hypermicro AFPM (wound-aware)** — dethrones Gen-AE (~13–28 W vs ~12–26 W @200 RPM; m2m 4.96 vs 5.00; Ø20 @ R=41 over copper centroid; one-plate 404×404 ≤408).
+**Champion: Gen-AK dual-rotor copper-centroid ultra AFPM (wound-aware)** — dethrones Gen-AE (~14–30 W vs ~12–26 W @200 RPM; m2m 4.96 vs 5.00; Ø20 @ R=41 over copper centroid; one-plate 404×404 ≤408).
 
 See **[CHAMPION.md](CHAMPION.md)** and **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)**. Prior Gen-A–L were withdrawn for sizing gaps/slots to bare former STLs.
 
 | Kit | Path |
 |-----|------|
-| Champion | [`champions/2026-09-26-gen-ah-dual-rotor-coppercentroid/`](champions/2026-09-26-gen-ah-dual-rotor-coppercentroid/) |
-| One-plate pack | [`print-packs/gen-ah-dual-rotor-coppercentroid/`](print-packs/gen-ah-dual-rotor-coppercentroid/) |
-| Night runners | [`champions/runners-2026-09-26/`](champions/runners-2026-09-26/) |
+| Champion | [`champions/2026-09-27-gen-ak-dual-rotor-coppercentroid-ultra/`](champions/2026-09-27-gen-ak-dual-rotor-coppercentroid-ultra/) |
+| One-plate pack | [`print-packs/gen-ak-dual-rotor-coppercentroid-ultra/`](print-packs/gen-ak-dual-rotor-coppercentroid-ultra/) |
+| Night runners | [`champions/runners-2026-09-27/`](champions/runners-2026-09-27/) |
 | Prior champion | [`champions/2026-09-25-gen-ae-dual-rotor-hypermicro/`](champions/2026-09-25-gen-ae-dual-rotor-hypermicro/) |
 
 ## Magnet kit (fixed)
