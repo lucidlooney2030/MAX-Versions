@@ -1,13 +1,13 @@
 # Current champion — MAX-Versions
 
-**As of 2026-10-01-night (ET ~9:15 PM): Gen-AW dual-rotor copper-centroid pico AFPM — wound-compliant MAX tip.**
+**As of 2026-10-02-night (ET ~9:20 PM): Gen-AZ dual-rotor copper-centroid femto AFPM — wound-compliant MAX tip.**
 
-Path: [`champions/2026-10-01-gen-aw-dual-rotor-coppercentroid-pico/`](champions/2026-10-01-gen-aw-dual-rotor-coppercentroid-pico/)  
-Print pack: [`print-packs/gen-aw-dual-rotor-coppercentroid-pico/`](print-packs/gen-aw-dual-rotor-coppercentroid-pico/)
+Path: [`champions/2026-10-02-gen-az-dual-rotor-coppercentroid-femto/`](champions/2026-10-02-gen-az-dual-rotor-coppercentroid-femto/)  
+Print pack: [`print-packs/gen-az-dual-rotor-coppercentroid-femto/`](print-packs/gen-az-dual-rotor-coppercentroid-femto/)
 
-Gen-AW **dethrones Gen-AT** on estimated watts (~18–38 W vs ~17–36 W @200 RPM): dual magnet faces across a **ultra-micro-gap** wound mid-stator (`m2m=4.66 mm` vs Gen-AT 4.68) + **copper-centroid** Ø20 magnets @ **R=38.0** (vs AT R=38.5) + **215 t** + thinner `former_web=1.20` while magnet↔wound stays **0.50 mm PASS**. One-plate bbox **404×404 mm** (≤408).
+Gen-AZ **dethrones Gen-AW** on estimated watts (~19–40 W vs ~18–38 W @200 RPM): dual magnet faces across a **ultra-micro-gap** wound mid-stator (`m2m=4.66 mm` held) + **copper-centroid** Ø20 magnets @ **R=37.5** (vs AW R=38.0) + **220 t** (vs AW 215) while magnet↔wound stays **0.50 mm PASS**. One-plate bbox **404×404 mm** (≤408).
 
-## Wound math summary (26 AWG × 215 t, 12 pancakes)
+## Wound math summary (26 AWG × 220 t, 12 pancakes)
 
 | Param | Value |
 |-------|-------|
@@ -20,21 +20,23 @@ Gen-AW **dethrones Gen-AT** on estimated watts (~18–38 W vs ~17–36 W @200 RP
 | `run_clear` | **0.50 mm** (magnet → **wound**, each gap) |
 | `m2m` | **4.66 mm** = envelope + 2×run_clear |
 | `gap_spacer_h` | **1.13 mm** |
-| Magnets | 8+8 Ø20 @ **R=38.0** + 24+24 Ø5 Halbach @ R={23.0,38.0,55.0} (full kit) |
-| Copper | 12×215×~0.126 ≈ **325 m** (fits ~390 m spool) |
+| Magnets | 8+8 Ø20 @ **R=37.5** + 24+24 Ø5 Halbach @ R={22.5,37.5,54.5} (full kit) |
+| Copper | 12×220×~0.124 ≈ **328 m** (fits ~390 m spool) |
 | One-plate | **404×404 mm** PASS |
 
 Gate: **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)** — **PASS**.  
-Night envelope: **[WOUND_ENVELOPE_2026-10-01.md](WOUND_ENVELOPE_2026-10-01.md)**
+Night envelope: **[WOUND_ENVELOPE_2026-10-02.md](WOUND_ENVELOPE_2026-10-02.md)**
 
 ## Runners (same night, also PASS)
 
-- Gen-AX stacked mid-rotor copper-max ultra — `champions/runners-2026-10-01/gen-ax-stacked-midrotor-coppermax-ultra/` (~16–33 W)
-- Gen-AY vernier flux-claw mega — `champions/runners-2026-10-01/gen-ay-vernier-fluxclaw-mega/` (~15–32 W)
+- Gen-BA stacked mid-rotor copper-max mega — `champions/runners-2026-10-02/gen-ba-stacked-midrotor-coppermax-mega/` (~17–35 W)
+- Gen-BB vernier flux-claw ultra — `champions/runners-2026-10-02/gen-bb-vernier-fluxclaw-ultra/` (~16–34 W)
 
 ## Prior champion (still valid wound kit)
 
-Gen-AT dual-rotor copper-centroid hypermicro — `champions/2026-09-30-gen-at-dual-rotor-coppercentroid-hypermicro/` (~17–36 W @200, m2m 4.68, magnets @ R=38.5). Archived as previous tip.
+Gen-AW dual-rotor copper-centroid pico — `champions/2026-10-01-gen-aw-dual-rotor-coppercentroid-pico/` (~18–38 W @200, m2m 4.66, magnets @ R=38.0). Archived as previous tip.
+
+Gen-AT dual-rotor copper-centroid hypermicro — `champions/2026-09-30-gen-at-dual-rotor-coppercentroid-hypermicro/` (~17–36 W @200, m2m 4.68, magnets @ R=38.5).
 
 Gen-AQ dual-rotor copper-centroid ultra — `champions/2026-09-29-gen-aq-dual-rotor-coppercentroid-ultra/` (~16–34 W @200, m2m 4.71, magnets @ R=39.0).
 
