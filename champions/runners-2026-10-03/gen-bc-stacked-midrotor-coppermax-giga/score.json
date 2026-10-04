@@ -1,0 +1,161 @@
+{
+  "kit": "gen-bc-stacked-midrotor-coppermax-giga",
+  "path": "/workspace/generators/2026-10-03/gen-bc-stacked-midrotor-coppermax-giga",
+  "topology": "mid_rotor",
+  "rpm": 200.0,
+  "f_electrical_hz": 13.333333333333334,
+  "pole_pairs": 4,
+  "coils_per_stator": 9,
+  "stators": 2,
+  "halbach_mode": "diametric",
+  "halbach_counted": true,
+  "halbach_signs": {
+    "top": -1,
+    "bottom": 1
+  },
+  "magnets": {
+    "large": 16,
+    "small_modelled": 48,
+    "small_present": 48,
+    "Br_T": 1.43
+  },
+  "coil": {
+    "former_type": "bobbin",
+    "windable": true,
+    "r1": 28.0,
+    "r2": 52.0,
+    "span_deg": 32.42,
+    "copper_h_mm": 3.6,
+    "radial_build_mm": 8.4,
+    "window_area_mm2": 30.24
+  },
+  "winding": {
+    "wire_od": 0.45,
+    "bare_d": 0.4049,
+    "fill_assumed": 0.6,
+    "layers": 8,
+    "turns_per_layer_max": 18,
+    "n_fit_area": 114,
+    "n_fit_layers": 144,
+    "turns_fit": 114,
+    "turns_claimed": 114,
+    "turns_used": 114,
+    "overstated": false,
+    "copper_fill": 0.485,
+    "mlt_m": 0.0597,
+    "wire_per_coil_m": 6.96,
+    "wire_total_m": 125.3,
+    "r_coil_ohm_20C": 0.932
+  },
+  "stack": {
+    "recess": 0.20000000000000018,
+    "mag_face_z": 5.8,
+    "wound_gap": 0.7000000000000011,
+    "copper_gap": 1.3000000000000007,
+    "mech_gap": 0.5000000000000009,
+    "inter_magnet_web": 1.5999999999999996
+  },
+  "field": {
+    "peak_bz_copper_midplane_T": 0.337,
+    "mean_abs_bz_window_T": 0.1868,
+    "per_stator": {
+      "upper": {
+        "peak": 0.337,
+        "mean_window": 0.1868
+      },
+      "lower": {
+        "peak": 0.337,
+        "mean_window": 0.1868
+      }
+    }
+  },
+  "electrical": {
+    "flux_linkage_peak_coil_mWb": 7.3516,
+    "coil_emf_rms_V": 0.4252,
+    "phase_grouping_balanced": true,
+    "coils_per_phase": {
+      "0": 6,
+      "1": 6,
+      "2": 6
+    },
+    "coil_map": [
+      "upper0:A+",
+      "upper1:A-",
+      "upper2:B-",
+      "upper3:B+",
+      "upper4:B-",
+      "upper5:C-",
+      "upper6:C+",
+      "upper7:C-",
+      "upper8:A-",
+      "lower0:A+",
+      "lower1:A-",
+      "lower2:B-",
+      "lower3:B+",
+      "lower4:B-",
+      "lower5:C-",
+      "lower6:C+",
+      "lower7:C-",
+      "lower8:A-"
+    ],
+    "phase_err_deg_max": 20.0,
+    "voc_phase_rms_V": 2.445,
+    "voc_phase_peak_V": 3.306,
+    "voc_line_rms_V": 4.231,
+    "r_phase_ohm_20C": 5.59,
+    "r_phase_ohm_60C": 6.47,
+    "p_matched_W": 0.8021,
+    "p_matched_W_60C": 0.6931,
+    "i_matched_A": 0.2187,
+    "i_short_circuit_A": 0.4373
+  },
+  "checks": [
+    {
+      "status": "PASS",
+      "check": "rotor clocking",
+      "detail": "mid-rotor -Z face vs +Z face: offset 0 deg (pole pitch 45 deg), axis sign +1; fundamental clocking factor 1.000 (1.000 = magnets directly opposite, N facing S / through-magnetised stack)"
+    },
+    {
+      "status": "PASS",
+      "check": "rotor keying",
+      "detail": "rotor bore has D-flat / clocking pins"
+    },
+    {
+      "status": "PASS",
+      "check": "brace pattern flip-symmetry",
+      "detail": "brace angles ['45', '135', '225', '315']; flipped copy matches (a facing rotor/stator is a flipped print; asymmetric holes force a wrong clocking)"
+    },
+    {
+      "status": "PASS",
+      "check": "turns fit",
+      "detail": "claimed 114 t, fit 114 t (8 layers x <= 18/layer in 3.60 x 8.40 mm window, fill 0.6)"
+    },
+    {
+      "status": "PASS",
+      "check": "former windable",
+      "detail": "bobbin: open perimeter, printed hub"
+    },
+    {
+      "status": "PASS",
+      "check": "wound-coil envelope gap",
+      "detail": "magnet face -> wound envelope 0.70 mm (as-built recess 0.20 mm), magnet -> actual copper 1.30 mm, rotor face -> former 0.50 mm"
+    },
+    {
+      "status": "PASS",
+      "check": "adjacent formers",
+      "detail": "clearance between neighbouring former footprints at r=28: 1.70 mm"
+    },
+    {
+      "status": "PASS",
+      "check": "rotor holes vs magnet pockets",
+      "detail": "no hole intersects a pocket"
+    },
+    {
+      "status": "PASS",
+      "check": "one-plate bed fit",
+      "detail": "one_plate_layout.stl bbox 408.5 x 409.0 x 21.2 mm (limit 410)"
+    }
+  ],
+  "readme_claim_200rpm": null,
+  "verdict": "PASS"
+}

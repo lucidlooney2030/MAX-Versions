@@ -1,47 +1,60 @@
 # Current champion — MAX-Versions
 
-**As of 2026-10-02-night (ET ~9:20 PM): Gen-AZ dual-rotor copper-centroid femto AFPM — wound-compliant MAX tip.**
+**As of 2026-10-03-night (ET ~9:30 PM): Gen-BE dual-rotor backiron 9-coil mega — physics_scorer MAX tip.**
 
-Path: [`champions/2026-10-02-gen-az-dual-rotor-coppercentroid-femto/`](champions/2026-10-02-gen-az-dual-rotor-coppercentroid-femto/)  
-Print pack: [`print-packs/gen-az-dual-rotor-coppercentroid-femto/`](print-packs/gen-az-dual-rotor-coppercentroid-femto/)
+Path: [`champions/2026-10-03-gen-be-dual-rotor-backiron-9coil-mega/`](champions/2026-10-03-gen-be-dual-rotor-backiron-9coil-mega/)  
+Print pack: [`print-packs/gen-be-dual-rotor-backiron-9coil-mega/`](print-packs/gen-be-dual-rotor-backiron-9coil-mega/)
 
-Gen-AZ **dethrones Gen-AW** on estimated watts (~19–40 W vs ~18–38 W @200 RPM): dual magnet faces across a **ultra-micro-gap** wound mid-stator (`m2m=4.66 mm` held) + **copper-centroid** Ø20 magnets @ **R=37.5** (vs AW R=38.0) + **220 t** (vs AW 215) while magnet↔wound stays **0.50 mm PASS**. One-plate bbox **404×404 mm** (≤408).
+Gen-BE **dethrones Gen-AZ** (and the corrected Gen-BA 0.615 W baseline) on **honest** matched-load watts from `physics_scorer` (magpylib, PLA = air, N52 Br 1.43 T, 26 AWG @20 °C, steel back-iron via `--back-iron` image method):
 
-## Wound math summary (26 AWG × 220 t, 12 pancakes)
+| Metric @ 200 RPM | Gen-BE (new) | Gen-BA corrected baseline | Old Gen-AZ README claim |
+|---|---|---|---|
+| Matched-load P (3φ V²/4R) | **1.684 W** | 0.615 W | ~19–40 W (not physical) |
+| Voc rms/phase | **2.41 V** | 1.79 V | — |
+| R_phase @20 °C | **2.58 Ω** | 3.89 Ω | — |
+| Turns fit | **107** | 74 | 220 claimed / ~55 fit |
+| Bz peak / mean window | **0.750 / 0.436 T** | 0.374 / 0.201 T | 0.75–1.1 T assumed |
+| Topology | dual_rotor 8p/9c + steel | mid_rotor 8p/2×9c air | dual_rotor (mis-clocked) |
+| Verdict | **PASS** | PASS | FAIL on clocking/turns |
+
+## Why these watts are real (and the old 15–40 W were not)
+
+1. Rotor clocking = 0° (N facing S). Half-pole 22.5° clocking cut fundamental by ~0.71.
+2. Bobbin turns = winding-fit only (107 of 26 AWG in a 3.60×7.9 mm window). Claiming 200+ turns that do not fit inflated V and W.
+3. Field from magpylib of the actual magnet layout (PLA = air). Gap-field assumptions of 0.74–1.1 T were ~2–3× high for air-core.
+4. **Steel lever:** two buyable mild-steel discs Ø156 × 1.5 mm behind each rotor (image method, optimistic). Without steel, re-score without `--back-iron`.
+
+## Kit summary
 
 | Param | Value |
 |-------|-------|
-| `wire_od` | 0.45 mm |
-| `fill` | 0.70 |
-| `layers_per_face` | **2** |
-| `wind_build_axial` | **0.63 mm** / face |
-| `former_web` / `flange_t` | **1.20 / 0.60 mm** |
-| `coil_envelope_h` | **3.66 mm** |
-| `run_clear` | **0.50 mm** (magnet → **wound**, each gap) |
-| `m2m` | **4.66 mm** = envelope + 2×run_clear |
-| `gap_spacer_h` | **1.13 mm** |
-| Magnets | 8+8 Ø20 @ **R=37.5** + 24+24 Ø5 Halbach @ R={22.5,37.5,54.5} (full kit) |
-| Copper | 12×220×~0.124 ≈ **328 m** (fits ~390 m spool) |
-| One-plate | **404×404 mm** PASS |
+| Topology | dual_rotor, 8 poles, 9 coils × 1 stator |
+| `former_web` / `flange_t` | **3.60 / 0.60 mm** (taller copper vs BA 2.46) |
+| Copper sector | r 26–50 mm × 31.84°, radial build 7.9 mm |
+| Turns / wire | **107** t × 26 AWG, fill 0.60, ~9 coils |
+| Magnets | 8+8 Ø20 @ R=38 + 24+24 Ø5 **diametric** Halbach |
+| Steel BOM | 2× mild-steel discs Ø156 × 1.5 mm, hub clearance Ø32 |
+| Magnet↔wound | ≥0.50 mm PASS |
+| One-plate | **409×409 mm** ≤410 (Kobra 3 Max) |
+| Clocking | `rotor_b_offset_deg = 0`, D-flat + flip-symmetric braces |
 
-Gate: **[WOUND_COIL_RULE.md](WOUND_COIL_RULE.md)** — **PASS**.  
-Night envelope: **[WOUND_ENVELOPE_2026-10-02.md](WOUND_ENVELOPE_2026-10-02.md)**
+Gate: physics_scorer checks — **PASS**. Night scorecard: [`WOUND_ENVELOPE_2026-10-03.md`](WOUND_ENVELOPE_2026-10-03.md) (= SCORECARD).
 
-## Runners (same night, also PASS)
+## Runners (same night, also PASS, all beat Gen-BA 0.615 W)
 
-- Gen-BA stacked mid-rotor copper-max mega — `champions/runners-2026-10-02/gen-ba-stacked-midrotor-coppermax-mega/` (~17–35 W)
-- Gen-BB vernier flux-claw ultra — `champions/runners-2026-10-02/gen-bb-vernier-fluxclaw-ultra/` (~16–34 W)
+- Gen-BD dual-rotor backiron femto — `champions/runners-2026-10-03/gen-bd-dual-rotor-backiron-femto/` (**1.174 W**, 12-coil dual + steel)
+- Gen-BC stacked mid-rotor coppermax giga — `champions/runners-2026-10-03/gen-bc-stacked-midrotor-coppermax-giga/` (**0.802 W**, mid air-core, tall bobbin)
 
-## Prior champion (still valid wound kit)
+## Assembly warnings
 
-Gen-AW dual-rotor copper-centroid pico — `champions/2026-10-01-gen-aw-dual-rotor-coppercentroid-pico/` (~18–38 W @200, m2m 4.66, magnets @ R=38.0). Archived as previous tip.
+- Brace M4 before seating the second magnet face (clap).
+- Brim on 0.60 mm flanges / thin webs.
+- Remove temporary braces and gap shims before spinning.
+- Ø5 assists must be **diametrically** magnetised.
+- Wind bobbins before assembly; do not raise turns above SCORE.md.
 
-Gen-AT dual-rotor copper-centroid hypermicro — `champions/2026-09-30-gen-at-dual-rotor-coppercentroid-hypermicro/` (~17–36 W @200, m2m 4.68, magnets @ R=38.5).
+## Prior champion (archived; old watt claims superseded by physics_scorer)
 
-Gen-AQ dual-rotor copper-centroid ultra — `champions/2026-09-29-gen-aq-dual-rotor-coppercentroid-ultra/` (~16–34 W @200, m2m 4.71, magnets @ R=39.0).
+Gen-AZ dual-rotor copper-centroid femto — `champions/2026-10-02-gen-az-dual-rotor-coppercentroid-femto/` (README claimed ~19–40 W; corrected air-core rescore ~0.44 W; with back-iron what-if ~0.87 W). Superseded by Gen-BE honest 1.684 W.
 
-Gen-AN dual-rotor copper-centroid hyper — `champions/2026-09-28-gen-an-dual-rotor-coppercentroid-hyper/` (~15–32 W @200, m2m 4.76, magnets @ R=39.5).
-
-Gen-AK dual-rotor copper-centroid ultra — `champions/2026-09-27-gen-ak-dual-rotor-coppercentroid-ultra/` (~14–30 W @200, m2m 4.86, magnets @ R=40).
-
-Gen-AH dual-rotor copper-centroid hypermicro — `champions/2026-09-26-gen-ah-dual-rotor-coppercentroid/` (~13–28 W @200, m2m 4.96, magnets @ R=41).
+Corrected Gen-BA mid-rotor (0.615 W) remains the air-core mid baseline in the generators workspace `2026-10-02-fixed/`.
