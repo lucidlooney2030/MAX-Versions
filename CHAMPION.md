@@ -1,60 +1,62 @@
 # Current champion — MAX-Versions
 
-**As of 2026-10-03-night (ET ~9:30 PM): Gen-BE dual-rotor backiron 9-coil mega — physics_scorer MAX tip.**
+**As of 2026-10-04-night (ET ~10 PM): Gen-BF dual-rotor steel-seat 6-coil tall-copper — physics_scorer MAX tip.**
 
-Path: [`champions/2026-10-03-gen-be-dual-rotor-backiron-9coil-mega/`](champions/2026-10-03-gen-be-dual-rotor-backiron-9coil-mega/)  
-Print pack: [`print-packs/gen-be-dual-rotor-backiron-9coil-mega/`](print-packs/gen-be-dual-rotor-backiron-9coil-mega/)
+Path: [`champions/2026-10-04-gen-bf-dual-rotor-steelseat-6coil-tallcopper/`](champions/2026-10-04-gen-bf-dual-rotor-steelseat-6coil-tallcopper/)  
+Print pack: [`print-packs/gen-bf-dual-rotor-steelseat-6coil-tallcopper/`](print-packs/gen-bf-dual-rotor-steelseat-6coil-tallcopper/) (one-plate STL + parts + `laser-cut/steel_backiron_disc.dxf`)
 
-Gen-BE **dethrones Gen-AZ** (and the corrected Gen-BA 0.615 W baseline) on **honest** matched-load watts from `physics_scorer` (magpylib, PLA = air, N52 Br 1.43 T, 26 AWG @20 °C, steel back-iron via `--back-iron` image method):
+Gen-BF **dethrones Gen-BE** on **honest** matched-load watts from `physics_scorer` (magpylib, PLA = air, N52 Br 1.43 T,
+26 AWG @20 °C, steel back-iron via `--back-iron` image method):
 
-| Metric @ 200 RPM | Gen-BE (new) | Gen-BA corrected baseline | Old Gen-AZ README claim |
-|---|---|---|---|
-| Matched-load P (3φ V²/4R) | **1.684 W** | 0.615 W | ~19–40 W (not physical) |
-| Voc rms/phase | **2.41 V** | 1.79 V | — |
-| R_phase @20 °C | **2.58 Ω** | 3.89 Ω | — |
-| Turns fit | **107** | 74 | 220 claimed / ~55 fit |
-| Bz peak / mean window | **0.750 / 0.436 T** | 0.374 / 0.201 T | 0.75–1.1 T assumed |
-| Topology | dual_rotor 8p/9c + steel | mid_rotor 8p/2×9c air | dual_rotor (mis-clocked) |
-| Verdict | **PASS** | PASS | FAIL on clocking/turns |
+| Metric @ 200 RPM | Gen-BF (new) | Gen-BE (prior champion) |
+|---|---|---|
+| Matched-load P (3φ V²/4R) | **4.380 W** | 1.684 W |
+| Voc rms/phase | **9.04 V** | 2.41 V |
+| R_phase @20 °C | **14.00 Ω** | 2.58 Ω |
+| Turns fit / coil | **571** | 107 |
+| Bz peak / mean window | **0.474 / 0.123 T** | 0.750 / 0.436 T |
+| Topology | dual_rotor 8p/6c + 2× 3 mm steel | dual_rotor 8p/9c + 2× 1.5 mm steel |
+| Copper | 314 m | 58 m |
+| Verdict | **PASS** | PASS |
 
-## Why these watts are real (and the old 15–40 W were not)
+## Why it is better (and still honest)
 
-1. Rotor clocking = 0° (N facing S). Half-pole 22.5° clocking cut fundamental by ~0.71.
-2. Bobbin turns = winding-fit only (107 of 26 AWG in a 3.60×7.9 mm window). Claiming 200+ turns that do not fit inflated V and W.
-3. Field from magpylib of the actual magnet layout (PLA = air). Gap-field assumptions of 0.74–1.1 T were ~2–3× high for air-core.
-4. **Steel lever:** two buyable mild-steel discs Ø156 × 1.5 mm behind each rotor (image method, optimistic). Without steel, re-score without `--back-iron`.
+1. **Tall copper (9.9 mm web) once steel is in.** With steel behind the magnets the gap field falls slowly with gap, so copper volume wins
+   (scan: same Gen-BE coil 3.6 → 7.2 mm web = 1.78 → 2.27 W). 22 layers × 571 turns fit the 9.9 × 15.3 mm window at fill 0.60.
+2. **8p/6c big coils** (51.5° sectors, r 25–62 mm) beat 8p/9c and 8p/12c at equal copper; RL pushed to 44 mm.
+3. **Magnets sit ON the steel** (through-pockets) — the exact plane the scorer's image method assumes (Gen-BE had ~2.3 mm PLA between).
+   Steel 3 mm (≈0.7 T average; 1.5 mm would be near saturation). Air-core what-if of the same kit: 2.15 W — steel is required.
+4. Ø5 diametric assists kept (+6 %: 4.14 W without). Clocking 0°, D-flat + notch, flip-symmetric holes, magnet→wound 0.60 mm.
 
 ## Kit summary
 
 | Param | Value |
 |-------|-------|
-| Topology | dual_rotor, 8 poles, 9 coils × 1 stator |
-| `former_web` / `flange_t` | **3.60 / 0.60 mm** (taller copper vs BA 2.46) |
-| Copper sector | r 26–50 mm × 31.84°, radial build 7.9 mm |
-| Turns / wire | **107** t × 26 AWG, fill 0.60, ~9 coils |
-| Magnets | 8+8 Ø20 @ R=38 + 24+24 Ø5 **diametric** Halbach |
-| Steel BOM | 2× mild-steel discs Ø156 × 1.5 mm, hub clearance Ø32 |
-| Magnet↔wound | ≥0.50 mm PASS |
-| One-plate | **409×409 mm** ≤410 (Kobra 3 Max) |
-| Clocking | `rotor_b_offset_deg = 0`, D-flat + flip-symmetric braces |
+| `former_web` / `flange_t` | **9.90 / 0.80 mm** |
+| Copper sector | r 25–62 mm × 51.51°, radial build 15.3 mm |
+| Turns / wire | **571 t** × 26 AWG per coil, 6 coils, 2 per phase in series, 314 m total (≤ 390 m spool) |
+| Magnets | 8+8 Ø20 @ R=44 + 24+24 Ø5 **diametric** |
+| Steel BOM | 2× mild-steel discs Ø127 × 3 mm, centre Ø26, holes per DXF |
+| Gap | m2m 12.5 mm, printed gap sleeve between rotors |
+| One-plate | **408.5×409.0 mm** ≤410 (all parts, Kobra 3 Max) |
+| Frame | M3 rods + standoff tubes outside the rotor OD, between coil stations |
 
-Gate: physics_scorer checks — **PASS**. Night scorecard: [`WOUND_ENVELOPE_2026-10-03.md`](WOUND_ENVELOPE_2026-10-03.md) (= SCORECARD).
+Gate: physics_scorer checks **PASS** + extra geometry checks (GEOM_CHECK.md) **PASS**. Night scorecard: [`WOUND_ENVELOPE_2026-10-04.md`](WOUND_ENVELOPE_2026-10-04.md) (= SCORECARD).
 
-## Runners (same night, also PASS, all beat Gen-BA 0.615 W)
+## Runners (same night, also PASS, both beat Gen-BE 1.684 W)
 
-- Gen-BD dual-rotor backiron femto — `champions/runners-2026-10-03/gen-bd-dual-rotor-backiron-femto/` (**1.174 W**, 12-coil dual + steel)
-- Gen-BC stacked mid-rotor coppermax giga — `champions/runners-2026-10-03/gen-bc-stacked-midrotor-coppermax-giga/` (**0.802 W**, mid air-core, tall bobbin)
+- Gen-BG dual-rotor steel-seat 9-coil tall-copper — `champions/runners-2026-10-04/gen-bg-dual-rotor-steelseat-9coil-tallcopper/` (**3.176 W**, 8p/9c, 257 m wire)
+- Gen-BH dual-rotor steel-seat 4-pole double-stack — `champions/runners-2026-10-04/gen-bh-dual-rotor-steelseat-4pole-doublestack/` (**1.843 W**, all 16 Ø20 as 8 × 10 mm poles, no Ø5)
 
 ## Assembly warnings
 
-- Brace M4 before seating the second magnet face (clap).
-- Brim on 0.60 mm flanges / thin webs.
+- **Clap hazard is larger** (steel-backed N52): use the 4 temporary M4 jack rods (R18) and lower rotor B by the nuts before seating the second magnet face.
 - Remove temporary braces and gap shims before spinning.
-- Ø5 assists must be **diametrically** magnetised.
-- Wind bobbins before assembly; do not raise turns above SCORE.md.
+- Brim on 0.8 mm flanges / 1.2 mm stator webs.
+- Ø5 assists must be **diametrically** magnetised, glued tangentially.
+- Wind bobbins before assembly (52 m per coil — use a winding jig); do not raise turns above SCORE.md.
 
-## Prior champion (archived; old watt claims superseded by physics_scorer)
+## Prior champion
 
-Gen-AZ dual-rotor copper-centroid femto — `champions/2026-10-02-gen-az-dual-rotor-coppercentroid-femto/` (README claimed ~19–40 W; corrected air-core rescore ~0.44 W; with back-iron what-if ~0.87 W). Superseded by Gen-BE honest 1.684 W.
-
+Gen-BE dual-rotor backiron 9-coil mega — `champions/2026-10-03-gen-be-dual-rotor-backiron-9coil-mega/` (1.684 W). Superseded by Gen-BF 4.380 W.
 Corrected Gen-BA mid-rotor (0.615 W) remains the air-core mid baseline in the generators workspace `2026-10-02-fixed/`.
