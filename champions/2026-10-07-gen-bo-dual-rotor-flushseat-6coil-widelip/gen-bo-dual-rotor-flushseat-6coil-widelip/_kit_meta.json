@@ -1,0 +1,63 @@
+{
+ "title": "Gen-BO",
+ "n": 6,
+ "large_n": 8,
+ "mh": 5.0,
+ "recess": 0.0,
+ "RL": 50.0,
+ "rs": [
+  43.0,
+  50.0,
+  57.0
+ ],
+ "small": true,
+ "rin": 28.0,
+ "rout": 70.0,
+ "b": 18.0,
+ "wall": 0.8,
+ "former_web": 8.1,
+ "flange_t": 0.8,
+ "fill": 0.65,
+ "fill_note": "DENSE layered wind with a jig; scorer cap 0.65",
+ "fill_how": "The scored turns assume a dense, layer-by-layer wind at fill 0.65 (insulated-wire area / window; the scorer cap). Use a winding jig on a drill/lathe with a turn counter, lay each layer side-by-side with light back-tension, and do not scramble-wind: a scramble wind only reaches \u22480.55\u20130.60 and then the window holds fewer turns (scorer what-if `--fill 0.60` is in the table above). Never wind more than the listed turns \u2014 the copper must stay below the flanges.",
+ "carrier_od": 134.0,
+ "steel_t": 4.76,
+ "hub_h": 12.0,
+ "steel_desc": "2\u00d7 \u00d8134 \u00d7 4.76 mm (3/16\") mild-steel discs",
+ "steel_extra": "\n**Re-use note (Gen-BO):** the disc OD (\u00d8134), centre hole (\u00d826), M3 hole map (R30 at 0/90/180/270\u00b0, R63 at 45/135/225/315\u00b0), M4 brace holes (R18 at 45\u00b0\u2026) and rim notch are **identical to Gen-BL / Gen-BI's** `steel_backiron_disc.dxf` \u2014 the same laser-cut steel discs work; the rotor carriers are NEW (flush 5.00 mm through-pockets and a new \u00d85 map), so print new rotors. New bobbins (28\u201370 mm, 0.8 mm lip) and a new stator are needed too.\n",
+ "bolt_r_inner": 30.0,
+ "bolt_inner_angles": [
+  0,
+  90,
+  180,
+  270
+ ],
+ "bolt_r_outer": 63.0,
+ "bolt_outer_angles": [
+  45,
+  135,
+  225,
+  315
+ ],
+ "brace_r": 18.0,
+ "brace_angles": [
+  45,
+  135,
+  225,
+  315
+ ],
+ "card_title": "Gen-BO \u00b7 dual-rotor 8p/6c flush-seat, wide-lip bobbins",
+ "card_sub": "flush 5.00 mm through-pockets \u00b7 0.8 mm bobbin lip \u00b7 O5 tight map R43/50/57 \u00b7 8.1 mm dense copper \u00b7 Gen-BL steel \u00b7 --back-iron \u00b7 2026-10-07",
+ "idea": "Flush seat + wider copper + tight assists: the magnets sit on the steel in 5.00 mm through-pockets (carrier = magnet height, recess 0 instead of 0.10 mm), so the magnet faces are 0.2 mm closer while still exactly 0.50 mm from the wound envelope; the bobbin lip beyond the copper is trimmed 1.0 \u2192 0.8 mm (still the 0.8 mm wall minimum, stator web still 1.2 mm), which widens each copper sector by ~0.6\u00b0 on 28\u201370 mm \u00d7 18.0 mm-build bobbins; and the diametric \u00d85 assists are pulled in to R43/50/57 (\u00b17 mm) where they add most flux under the copper. Same \u00d8134 \u00d7 4.76 mm steel discs as Gen-BL.",
+ "span": 53.24,
+ "flange_bolt_n": 6,
+ "flange_bolt_offset": 30.0,
+ "carrier_thick": 5.0,
+ "pocket_h": 5.0,
+ "flange_bolt_r": 73.0,
+ "stator_od": 158,
+ "endbell_od": 158,
+ "halb_block": "halbach_magnetisation = \"diametric\"; // O5x5 assist magnets MUST be DIAMETRICALLY magnetised (tangential)\nrotor_b_same_axis   = true;     // same-index magnets share one axis: N faces S across the gap",
+ "small_block": "R_small_inner       = 43.0;\nR_small_mid         = 50.0;\nR_small_outer       = 57.0;\nsmall_r_list        = [R_small_inner, R_small_mid, R_small_outer];   // O5 pockets between poles\n",
+ "turns": 595
+}
