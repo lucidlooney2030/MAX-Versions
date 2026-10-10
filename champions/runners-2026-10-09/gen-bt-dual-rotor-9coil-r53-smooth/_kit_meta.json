@@ -1,0 +1,63 @@
+{
+ "title": "Gen-BT",
+ "n": 9,
+ "large_n": 8,
+ "mh": 5.0,
+ "recess": 0.0,
+ "RL": 53.0,
+ "rs": [
+  45.0,
+  53.0,
+  61.0
+ ],
+ "small": true,
+ "rin": 36.0,
+ "rout": 70.0,
+ "b": 13.5,
+ "wall": 0.8,
+ "former_web": 9.45,
+ "flange_t": 0.8,
+ "fill": 0.65,
+ "fill_note": "DENSE layered wind with a jig; scorer cap 0.65",
+ "fill_how": "The scored turns assume a dense, layer-by-layer wind at fill 0.65 (insulated-wire area / window; the scorer cap). Use a winding jig on a drill/lathe with a turn counter, lay each layer side-by-side with light back-tension, and do not scramble-wind: a scramble wind only reaches \u22480.55\u20130.60 and then the window holds fewer turns (scorer what-if `--fill 0.60` is in the table above). Never wind more than the listed turns \u2014 the copper must stay below the flanges.",
+ "carrier_od": 140.0,
+ "steel_t": 4.76,
+ "hub_h": 12.0,
+ "steel_desc": "2\u00d7 \u00d8140 \u00d7 4.76 mm (3/16\") mild-steel discs",
+ "steel_extra": "\n**New steel:** \u00d8140 discs (M3 clamp map R30 at 0/90/180/270\u00b0 and R66 at 45/135/225/315\u00b0) \u2014 cut from this kit's `steel_backiron_disc.dxf`; Gen-BQ's \u00d8138 discs do not fit the R66 bolt circle.\n",
+ "bolt_r_inner": 30.0,
+ "bolt_inner_angles": [
+  0,
+  90,
+  180,
+  270
+ ],
+ "bolt_r_outer": 66.0,
+ "bolt_outer_angles": [
+  45,
+  135,
+  225,
+  315
+ ],
+ "brace_r": 18.0,
+ "brace_angles": [
+  45,
+  135,
+  225,
+  315
+ ],
+ "card_title": "Gen-BT \u00b7 dual-rotor 8p/9c smooth-torque, R53 ring",
+ "card_sub": "9 coils \u00b7 poles R53 \u00b7 36\u201370 mm bobbins \u00d7 13.5 build \u00b7 9.45 mm copper \u00b7 O5 R45/53/61 \u00b7 \u00d8140 steel \u00b7 --back-iron \u00b7 2026-10-09",
+ "idea": "The low-cogging 8-pole / 9-coil line (winding factor 0.945) moved to a larger R53 pole ring with 36\u201370 mm bobbins and a 13.5 mm build, the best 9-coil row in tonight's scans (Gen-BQ was R52 / 35\u201370 / 12.6). Smoother to spin by hand and quieter, but still well below 6 coils under the wire budget.",
+ "span": 34.75,
+ "flange_bolt_n": 9,
+ "flange_bolt_offset": 20.0,
+ "carrier_thick": 5.0,
+ "pocket_h": 5.0,
+ "flange_bolt_r": 76.0,
+ "stator_od": 162.0,
+ "endbell_od": 162.0,
+ "halb_block": "halbach_magnetisation = \"diametric\"; // O5x5 assist magnets MUST be DIAMETRICALLY magnetised (tangential)\nrotor_b_same_axis   = true;     // same-index magnets share one axis: N faces S across the gap",
+ "small_block": "R_small_inner       = 45.0;\nR_small_mid         = 53.0;\nR_small_outer       = 61.0;\nsmall_r_list        = [R_small_inner, R_small_mid, R_small_outer];   // O5 pockets between poles\n",
+ "turns": 521
+}

@@ -1,67 +1,53 @@
 # Current champion — MAX-Versions
 
-**As of 2026-10-07-night (ET): Gen-BO dual-rotor flush-seat 6-coil wide-lip — physics_scorer MAX tip.**
+**As of 2026-10-09-night (ET): Gen-BR dual-rotor Gen-BO rotor retrofit, tightest legal Ø5 map — physics_scorer MAX tip.**
 
-Path: [`champions/2026-10-07-gen-bo-dual-rotor-flushseat-6coil-widelip/`](champions/2026-10-07-gen-bo-dual-rotor-flushseat-6coil-widelip/)  
-Print pack: [`print-packs/gen-bo-dual-rotor-flushseat-6coil-widelip/`](print-packs/gen-bo-dual-rotor-flushseat-6coil-widelip/) (one-plate STL + parts + `laser-cut/steel_backiron_disc.dxf`)
+Path: [`champions/2026-10-09-gen-br-dual-rotor-bo-retrofit-tight-o5/`](champions/2026-10-09-gen-br-dual-rotor-bo-retrofit-tight-o5/)  
+Print pack: [`print-packs/gen-br-dual-rotor-bo-retrofit-tight-o5/`](print-packs/gen-br-dual-rotor-bo-retrofit-tight-o5/) (one-plate STL + parts + `laser-cut/steel_backiron_disc.dxf`)
 
-Gen-BO **dethrones Gen-BL** on **honest** matched-load watts from `physics_scorer` (magpylib, PLA = air, N52 Br 1.43 T,
-26 AWG @20 °C, steel back-iron via `--back-iron` image method = optimistic upper bound; same mode as Gen-BL):
+Gen-BR edges out Gen-BO on **honest** matched-load watts from `physics_scorer` (magpylib, PLA = air, N52 Br 1.43 T,
+26 AWG @20 °C, steel back-iron via `--back-iron` image method = optimistic upper bound; same mode as Gen-BO):
 
-| Metric @ 200 RPM | Gen-BO (new) | Gen-BL (prior champion) |
+| Metric @ 200 RPM | Gen-BR (new) | Gen-BO (prior champion) |
 |---|---|---|
-| Matched-load P (3φ V²/4R) | **5.497 W** | 5.299 W |
-| Voc rms/phase | **11.00 V** | 10.76 V |
-| R_phase @20 °C | **16.51 Ω** | 16.39 Ω |
-| Turns fit / coil | **595** (fill 0.65) | 566 (fill 0.65) |
-| Bz peak / mean window | **0.540 / 0.104 T** | 0.532 / 0.102 T |
-| Topology | dual_rotor 8p/6c + 2× Ø134 × 4.76 mm steel | dual_rotor 8p/6c + 2× Ø134 × 4.76 mm steel |
-| Copper | 370 m | 367 m |
-| Air-core what-if (no `--back-iron`) | 2.713 W | 2.570 W |
-| Verdict | **PASS** | PASS |
+| Matched-load P (3φ V²/4R) | **5.507 W** | 5.497 W |
+| Voc rms/phase | **11.01 V** | 11.00 V |
+| R_phase @20 °C | **16.51 Ω** | 16.51 Ω |
+| Turns fit / coil | **595** (fill 0.65) | 595 (fill 0.65) |
+| Bz peak / mean window | **0.540 / 0.104 T** | 0.540 / 0.104 T |
+| Topology | dual_rotor 8p/6c + 2× Ø134 × 4.76 mm steel | same |
+| Copper | 370 m | 370 m |
+| Air-core what-if (no `--back-iron`) | 2.727 W | 2.713 W |
+| Verdict | **PASS** (geometry check PASS) | PASS |
 
-That is +3.7 %, a small, honest step: the 8p/6c family is close to its limit under the ~370 m wire budget.
+That is **+0.2 %** — a hair. The 8p/6c flush-seat family is saturated under the ~370 m wire budget (a 197-row scan tonight found nothing bigger).
 
-## Why it is better (and still honest)
+## What changed
 
-1. **Flush magnet seat (+2.2 %).** Rotor carriers are printed exactly magnet-height (5.00 mm through-pockets, magnets still sit on the steel),
-   so the magnet faces are level with the rotor face (recess 0 instead of 0.10 mm). Magnet faces 10.7 mm apart instead of 10.9 mm; the
-   magnet→wound-envelope clearance is exactly the 0.50 mm minimum. **Measure the magnets with calipers**; if any is over 5.00 mm, lengthen
-   the gap sleeve by 2× the excess (README).
-2. **0.8 mm bobbin lip** (was 1.0 mm; still the 0.8 mm wall minimum; stator web still 1.2 mm): copper sector 28–70 mm × 53.24°, 18.0 mm build, 8.1 mm window.
-3. **Ø5 diametric assists tightened** R40/50/60 → R43/50/57: +7.4 % vs no Ø5 (5.120 W without them).
-4. Same Ø134 × 4.76 mm steel discs / DXF as Gen-BL (worst-case return band ≈1.46 T, ≈0.54 T spread, `_build/steel_flux.py`).
-5. Clocking 0°, D-flat + notch, flip-symmetric holes, bobbins windable, all scorer + geometry checks PASS; one-plate 407.9 × 408.0 mm.
+Only the two rotor carriers: the diametric Ø5 assists move from ±7 mm to **±6.2 mm** around the R50 pole ring (R43.8/50/56.2), the closest
+spacing that still leaves a 0.9 mm printed web between Ø5.3 pockets (rule ≥ 0.8). Bobbins, 595 t windings, stator, gap sleeve, endbells,
+standoffs and the Ø134 × 4.76 mm steel discs/DXF are identical to Gen-BO — an existing Gen-BO upgrades by printing two rotors.
+Ø5 assists: +7.6 % vs none (5.120 W without). Fill 0.60 what-if: 5.088 W. Clocking 0°, D-flat + notch, flip-symmetric holes, windable bobbins,
+magnet→wound envelope 0.50 mm, one-plate 407.9 × 408.0 mm.
 
-## Kit summary
-
-| Param | Value |
-|-------|-------|
-| `former_web` / `flange_t` / lip | **8.10 / 0.80 / 0.80 mm** |
-| Copper sector | r 28–70 mm × 53.24°, radial build 18.0 mm |
-| Turns / wire | **595 t** × 26 AWG per coil (fill 0.65, dense layered), 6 coils, 2 per phase in series, 370 m total (at the ≤ 370 m budget) |
-| Magnets | 8+8 Ø20 @ R=50 + 24+24 Ø5 **diametric** @ R43/50/57 |
-| Steel BOM | 2× mild-steel discs Ø134 × 4.76 mm (3/16"), centre Ø26, holes per DXF (same as Gen-BL) |
-| Gap | m2m 10.7 mm, printed gap sleeve between rotors; magnet→wound 0.50 mm |
-| One-plate | **407.9×408.0 mm** ≤410 (all parts, Kobra 3 Max, measured from the STL) |
-
-Night scorecard: [`WOUND_ENVELOPE_2026-10-07.md`](WOUND_ENVELOPE_2026-10-07.md) (= SCORECARD).
+Night scorecard: [`WOUND_ENVELOPE_2026-10-09.md`](WOUND_ENVELOPE_2026-10-09.md) (= SCORECARD).
 
 ## Runners (same night, also PASS)
 
-- Gen-BP Gen-BL rotor retrofit (flush seat + tight Ø5 map) — `champions/runners-2026-10-07/gen-bp-dual-rotor-flushseat-bl-retrofit/` (**5.460 W**, air-core 2.688 W; reuse Gen-BL's bobbins/stator/steel, print only 2 rotors; beats Gen-BL)
-- Gen-BQ dual-rotor flush-seat 9-coil wide-lip — `champions/runners-2026-10-07/gen-bq-dual-rotor-flushseat-9coil-widelip/` (**4.420 W**, air-core 2.150 W, 8p/9c smooth torque, Ø138 × 4.76 mm steel; below Gen-BL)
+- Gen-BS compact R48 wire-saver — `champions/runners-2026-10-09/gen-bs-dual-rotor-compact-r48-wiresaver/` (**5.406 W**, 10.71 V rms/ph, air-core 2.708 W; only 356 m copper, 14 m spare on a ~390 m spool; same Ø134 steel)
+- Gen-BT 8p/9c smooth-torque R53 — `champions/runners-2026-10-09/gen-bt-dual-rotor-9coil-r53-smooth/` (**4.481 W**, 9.92 V rms/ph, air-core 2.181 W; new Ø140 × 4.76 mm steel)
 
 ## Assembly warnings
 
 - **Clap hazard** (steel-backed N52 across a 10.7 mm gap): use the 4 temporary M4 jack rods (R18) and lower rotor B by the nuts before seating the second magnet face.
-- Remove temporary braces and gap shims before spinning; shim against the **magnet faces** (flush seat).
-- Brim on 0.8 mm flanges / 1.2 mm stator webs.
-- Ø5 assists must be **diametrically** magnetised, glued tangentially (axial Ø5 are not counted: 5.120 W without them).
-- Wind bobbins before assembly, dense and layer-by-layer (61.6 m per coil — winding jig + turn counter); do not raise turns. 370 m of a ~390 m spool — very little spare.
+- Remove temporary braces and gap shims before spinning; shim against the **magnet faces** (flush seat — caliper the magnets first).
+- Brim on 0.8 mm flanges / 1.2 mm stator webs (and the 0.9 mm Ø5 pocket webs on the rotors).
+- Ø5 assists must be **diametrically** magnetised, glued tangentially (axial Ø5 are not counted).
+- Wind bobbins before assembly, dense and layer-by-layer (61.6 m per coil); do not raise turns. 370 m of a ~390 m spool — very little spare (Gen-BS leaves 14 m).
 
 ## Prior champion
 
+Gen-BO dual-rotor flush-seat 6-coil wide-lip — `champions/2026-10-07-gen-bo-dual-rotor-flushseat-6coil-widelip/` (5.497 W). Superseded by Gen-BR 5.507 W.
 Gen-BL dual-rotor steel-seat 6-coil dense-wind — `champions/2026-10-06-gen-bl-dual-rotor-steelseat-6coil-densewind/` (5.299 W). Superseded by Gen-BO 5.497 W.
 Gen-BF dual-rotor steel-seat 6-coil tall-copper — `champions/2026-10-04-gen-bf-dual-rotor-steelseat-6coil-tallcopper/` (4.380 W). Superseded by Gen-BL 5.299 W.
 Gen-BE dual-rotor backiron 9-coil mega — `champions/2026-10-03-gen-be-dual-rotor-backiron-9coil-mega/` (1.684 W). Superseded by Gen-BF 4.380 W.

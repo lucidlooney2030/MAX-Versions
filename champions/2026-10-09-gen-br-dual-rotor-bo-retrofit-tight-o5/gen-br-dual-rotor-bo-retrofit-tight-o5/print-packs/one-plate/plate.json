@@ -1,0 +1,21 @@
+{
+ "bbox": [
+  407.9348831176758,
+  408.0,
+  29.5
+ ],
+ "counts": {
+  "endbell_front.stl": 1,
+  "endbell_rear.stl": 1,
+  "rotor_face_a.stl": 1,
+  "rotor_face_b.stl": 1,
+  "stator_core.stl": 1,
+  "fit_coupon.stl": 1,
+  "coil_former.stl": 6,
+  "coil_lid.stl": 6,
+  "frame_standoff.stl": 12,
+  "gap_spacer.stl": 6,
+  "gap_sleeve.stl": 1,
+  "shaft_collar.stl": 4
+ }
+}

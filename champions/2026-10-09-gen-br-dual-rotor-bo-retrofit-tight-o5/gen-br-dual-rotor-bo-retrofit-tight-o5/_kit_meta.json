@@ -1,0 +1,63 @@
+{
+ "title": "Gen-BR",
+ "n": 6,
+ "large_n": 8,
+ "mh": 5.0,
+ "recess": 0.0,
+ "RL": 50.0,
+ "rs": [
+  43.8,
+  50.0,
+  56.2
+ ],
+ "small": true,
+ "rin": 28.0,
+ "rout": 70.0,
+ "b": 18.0,
+ "wall": 0.8,
+ "former_web": 8.1,
+ "flange_t": 0.8,
+ "fill": 0.65,
+ "fill_note": "DENSE layered wind with a jig; scorer cap 0.65",
+ "fill_how": "The scored turns assume a dense, layer-by-layer wind at fill 0.65 (insulated-wire area / window; the scorer cap). Use a winding jig on a drill/lathe with a turn counter, lay each layer side-by-side with light back-tension, and do not scramble-wind: a scramble wind only reaches \u22480.55\u20130.60 and then the window holds fewer turns (scorer what-if `--fill 0.60` is in the table above). Never wind more than the listed turns \u2014 the copper must stay below the flanges.",
+ "carrier_od": 134.0,
+ "steel_t": 4.76,
+ "hub_h": 12.0,
+ "steel_desc": "2\u00d7 \u00d8134 \u00d7 4.76 mm (3/16\") mild-steel discs",
+ "steel_extra": "\n**Re-use note (Gen-BR):** the disc OD (\u00d8134), centre hole (\u00d826), M3 hole map (R30 at 0/90/180/270\u00b0, R63 at 45/135/225/315\u00b0), M4 brace holes (R18 at 45\u00b0\u2026) and rim notch are **identical to Gen-BO / Gen-BL's** `steel_backiron_disc.dxf` \u2014 the same laser-cut steel discs work. **Everything except the two rotor carriers is Gen-BO** (same 28\u201370 mm bobbins, 595 t windings, stator, gap sleeve, endbells, standoffs) \u2014 Gen-BR is a two-part rotor swap for an existing Gen-BO.\n",
+ "bolt_r_inner": 30.0,
+ "bolt_inner_angles": [
+  0,
+  90,
+  180,
+  270
+ ],
+ "bolt_r_outer": 63.0,
+ "bolt_outer_angles": [
+  45,
+  135,
+  225,
+  315
+ ],
+ "brace_r": 18.0,
+ "brace_angles": [
+  45,
+  135,
+  225,
+  315
+ ],
+ "card_title": "Gen-BR \u00b7 Gen-BO rotor retrofit, tightest legal \u00d85 map",
+ "card_sub": "reuse Gen-BO stator/bobbins/steel \u00b7 print 2 new rotors \u00b7 O5 R43.8/50/56.2 (\u00b16.2, 0.9 mm webs) \u00b7 --back-iron \u00b7 2026-10-09",
+ "idea": "Rotor-only swap for Gen-BO: the diametric \u00d85 assists move from \u00b17 mm to \u00b16.2 mm around the R50 pole ring (R43.8/50/56.2), the closest spacing that still leaves a 0.9 mm printed web between \u00d85.3 pockets (rule \u22650.8). Everything else \u2014 bobbins, 595 t windings, stator, \u00d8134 steel \u2014 is Gen-BO. Tonight's 138-row refine scan (ring radius 49\u201351, coil radii \u00b10.5, build \u00b10.4, copper height 7.9\u20138.3) found nothing better: the 8p/6c flush-seat family is saturated under the ~370 m wire budget, so this is a tie-level tweak, not a real step.",
+ "span": 53.24,
+ "flange_bolt_n": 6,
+ "flange_bolt_offset": 30.0,
+ "carrier_thick": 5.0,
+ "pocket_h": 5.0,
+ "flange_bolt_r": 73.0,
+ "stator_od": 158,
+ "endbell_od": 158,
+ "halb_block": "halbach_magnetisation = \"diametric\"; // O5x5 assist magnets MUST be DIAMETRICALLY magnetised (tangential)\nrotor_b_same_axis   = true;     // same-index magnets share one axis: N faces S across the gap",
+ "small_block": "R_small_inner       = 43.8;\nR_small_mid         = 50.0;\nR_small_outer       = 56.2;\nsmall_r_list        = [R_small_inner, R_small_mid, R_small_outer];   // O5 pockets between poles\n",
+ "turns": 595
+}
