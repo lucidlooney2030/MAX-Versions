@@ -1,0 +1,142 @@
+{
+  "kit": "gen-bw-dual-rotor-4p-stacked10-6c",
+  "path": "/workspace/generators/2026-10-10/gen-bw-dual-rotor-4p-stacked10-6c",
+  "topology": "dual_rotor",
+  "rpm": 200.0,
+  "f_electrical_hz": 6.666666666666667,
+  "pole_pairs": 2,
+  "coils_per_stator": 6,
+  "stators": 1,
+  "halbach_mode": "none",
+  "halbach_counted": false,
+  "halbach_signs": {},
+  "magnets": {
+    "large": 8,
+    "small_modelled": 0,
+    "small_present": 0,
+    "Br_T": 1.43
+  },
+  "coil": {
+    "former_type": "bobbin",
+    "windable": true,
+    "r1": 26.0,
+    "r2": 74.0,
+    "span_deg": 52.72,
+    "copper_h_mm": 6.75,
+    "radial_build_mm": 21.25,
+    "window_area_mm2": 143.438
+  },
+  "winding": {
+    "wire_od": 0.45,
+    "bare_d": 0.4049,
+    "fill_assumed": 0.65,
+    "layers": 15,
+    "turns_per_layer_max": 47,
+    "n_fit_area": 586,
+    "n_fit_layers": 705,
+    "turns_fit": 586,
+    "turns_claimed": 586,
+    "turns_used": 586,
+    "overstated": false,
+    "copper_fill": 0.526,
+    "mlt_m": 0.1034,
+    "wire_per_coil_m": 60.72,
+    "wire_total_m": 364.3,
+    "r_coil_ohm_20C": 8.13
+  },
+  "stack": {
+    "recess": 0.0,
+    "m2m": 9.35,
+    "mag_face_z": 4.675,
+    "wound_gap": 0.5,
+    "copper_gap": 1.2999999999999998,
+    "mech_gap": 0.5
+  },
+  "field": {
+    "peak_bz_copper_midplane_T": 0.7245,
+    "mean_abs_bz_window_T": 0.1166,
+    "per_stator": {
+      "S": {
+        "peak": 0.7245,
+        "mean_window": 0.1166
+      }
+    }
+  },
+  "electrical": {
+    "flux_linkage_peak_coil_mWb": 108.9871,
+    "coil_emf_rms_V": 3.6596,
+    "phase_grouping_balanced": true,
+    "coils_per_phase": {
+      "0": 2,
+      "1": 2,
+      "2": 2
+    },
+    "coil_map": [
+      "S0:A+",
+      "S1:B+",
+      "S2:C+",
+      "S3:A+",
+      "S4:B+",
+      "S5:C+"
+    ],
+    "phase_err_deg_max": 0.0,
+    "voc_phase_rms_V": 7.319,
+    "voc_phase_peak_V": 12.099,
+    "voc_line_rms_V": 7.885,
+    "r_phase_ohm_20C": 16.26,
+    "r_phase_ohm_60C": 18.82,
+    "p_matched_W": 2.471,
+    "p_matched_W_60C": 2.1353,
+    "i_matched_A": 0.2251,
+    "i_short_circuit_A": 0.4501
+  },
+  "checks": [
+    {
+      "status": "PASS",
+      "check": "rotor clocking",
+      "detail": "rotor B vs rotor A: offset 0 deg (pole pitch 90 deg), axis sign +1; fundamental clocking factor 1.000 (1.000 = magnets directly opposite, N facing S)"
+    },
+    {
+      "status": "PASS",
+      "check": "rotor keying",
+      "detail": "rotor bore has D-flat / clocking pins"
+    },
+    {
+      "status": "PASS",
+      "check": "brace pattern flip-symmetry",
+      "detail": "brace angles ['45', '135', '225', '315']; flipped copy matches (a facing rotor/stator is a flipped print; asymmetric holes force a wrong clocking)"
+    },
+    {
+      "status": "PASS",
+      "check": "turns fit",
+      "detail": "claimed 586 t, fit 586 t (15 layers x <= 47/layer in 6.75 x 21.25 mm window, fill 0.65)"
+    },
+    {
+      "status": "PASS",
+      "check": "former windable",
+      "detail": "bobbin: open perimeter, printed hub"
+    },
+    {
+      "status": "PASS",
+      "check": "wound-coil envelope gap",
+      "detail": "magnet face -> wound envelope 0.50 mm (as-built recess 0.00 mm), magnet -> actual copper 1.30 mm, rotor face -> former 0.50 mm"
+    },
+    {
+      "status": "PASS",
+      "check": "adjacent formers",
+      "detail": "clearance between neighbouring former footprints at r=26: 1.70 mm"
+    },
+    {
+      "status": "PASS",
+      "check": "rotor holes vs magnet pockets",
+      "detail": "no hole intersects a pocket"
+    },
+    {
+      "status": "PASS",
+      "check": "one-plate bed fit",
+      "detail": "one_plate_layout.stl bbox 407.9 x 408.0 x 36.5 mm (limit 410)"
+    }
+  ],
+  "readme_claim_200rpm": null,
+  "verdict": "PASS"
+}
