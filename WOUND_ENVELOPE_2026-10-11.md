@@ -54,7 +54,7 @@ Champion to beat: **Gen-BU** (`/workspace/generators/2026-10-10/gen-bu-dual-roto
 
 **Gen-BX** at **7.304 W** (`--back-iron`, air-core 3.340 W) — BEATS Gen-BU 6.101 W (1.197×, same scoring mode).
 
-Push: pending.
+Pushed Gen-BX to [lucidlooney2030/MAX-Versions](https://github.com/lucidlooney2030/MAX-Versions) @cb21ca5 as champion (CHAMPION.md updated with the numbers above; Gen-BZ/BY — which also beat Gen-BU — as runners under `champions/runners-2026-10-11/`, print packs under `print-packs/`).
 
 Archive: `/workspace/generators/2026-10-11-generators.tar.gz`
 
