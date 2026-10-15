@@ -1,0 +1,1 @@
+PICKED gen-ca-dual-rotor-8p12c-r84-arcs-nested g2.5_contact_s1_a5
