@@ -67,7 +67,7 @@ Champion to beat: **Gen-CD** (`/workspace/generators/2026-10-14/gen-cd-dual-roto
 
 **Gen-CJ** at **15.244 W** (`--back-iron`, air-core 7.586 W) — BEATS Gen-CD 8.555 W (1.782×, same scoring mode).
 
-Push: pending.
+Push: **Gen-CJ pushed** to lucidlooney2030/MAX-Versions @ `a516395` (main, fast-forward, no force) — `champions/2026-10-17-gen-cj-dual-rotor-8p12c-radial-block-halbach-r86/`, `print-packs/gen-cj-dual-rotor-8p12c-radial-block-halbach-r86/`, runners Gen-CL/Gen-CK in `champions/runners-2026-10-17/`, CHAMPION.md updated (back-iron + air-core, V, Ω, wire, cuboid-validation scorer note), scorecard = `WOUND_ENVELOPE_2026-10-17.md`.
 
 Archive: `/workspace/generators/2026-10-17-generators.tar.gz`
 
