@@ -1,0 +1,1 @@
+PICKED gen-cj-dual-rotor-8p12c-radial-block-halbach-r86 g2.5_contact_s0_a5

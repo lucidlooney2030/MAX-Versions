@@ -1,49 +1,63 @@
 # Current champion — MAX-Versions
 
-**As of 2026-10-14-night (ET): Gen-CD dual-rotor 8-pole / 12-coil R86 frontier tip (segmented magnet arcs + annular stator) — physics_scorer MAX tip.**
+**As of 2026-10-17-night (ET): Gen-CJ dual-rotor 8-pole / 12-coil, RADIAL N42-block hybrid poles + diametric Ø5 Halbach (segmented magnet arcs + annular stator) — physics_scorer MAX tip.**
 
-Path: [`champions/2026-10-14-gen-cd-dual-rotor-8p12c-r86-frontier-tip/`](champions/2026-10-14-gen-cd-dual-rotor-8p12c-r86-frontier-tip/)  
-Print pack: [`print-packs/gen-cd-dual-rotor-8p12c-r86-frontier-tip/`](print-packs/gen-cd-dual-rotor-8p12c-r86-frontier-tip/) (one-plate STL + parts + `laser-cut/steel_backiron_disc.dxf`)
+Path: [`champions/2026-10-17-gen-cj-dual-rotor-8p12c-radial-block-halbach-r86/`](champions/2026-10-17-gen-cj-dual-rotor-8p12c-radial-block-halbach-r86/)  
+Print pack: [`print-packs/gen-cj-dual-rotor-8p12c-radial-block-halbach-r86/`](print-packs/gen-cj-dual-rotor-8p12c-radial-block-halbach-r86/) (one-plate STL + parts + `laser-cut/steel_backiron_disc.dxf`)
 
-Gen-CD beats Gen-CA on **honest** matched-load watts from `physics_scorer` (magpylib, PLA = air, N52 Br 1.43 T,
-26 AWG @20 °C, steel back-iron via `--back-iron` image method = optimistic upper bound; same mode as Gen-CA):
+Gen-CJ beats Gen-CD on **honest** matched-load watts from `physics_scorer` (magpylib, PLA = air, N52 Br 1.43 T, **N42 blocks Br 1.29 T as magpylib Cuboids**,
+26 AWG @20 °C, steel back-iron via `--back-iron` image method = optimistic upper bound; same mode as Gen-CD):
 
-| Metric @ 200 RPM | Gen-CD (new) | Gen-CA (prior champion) |
+| Metric @ 200 RPM | Gen-CJ (new) | Gen-CD (prior champion) |
 |---|---|---|
-| Matched-load P (3φ V²/4R) | **8.555 W** | 8.492 W |
-| Voc rms/phase | **14.03 V** | 13.88 V |
-| R_phase @20 °C | **17.25 Ω** | 17.02 Ω |
-| Turns fit / coil | **370** × 12 coils (fill 0.65) | 366 × 12 coils (fill 0.65) |
-| Bz peak / mean window | **0.656 / 0.133 T** | 0.657 / 0.135 T |
-| Topology | dual_rotor **8p/12c**, poles R86, bobbins r65–105 × 4.95 mm copper, 8 bolt-on arcs/rotor + D-flat hub, open-centre stator, bases in place, no Ø5, 2× Ø198 × 4.76 mm steel | dual_rotor 8p/12c, R84, r64–104 × 4.95 mm copper, same arc-nested architecture, 2× Ø194 × 4.76 mm steel |
-| Magnet face gap (m2m) | **7.55 mm** | 7.55 mm |
-| Copper | 386 m | 381 m |
-| Air-core what-if (no `--back-iron`) | **3.784 W** | 3.771 W |
+| Matched-load P (3φ V²/4R), `--back-iron` | **15.244 W** | 8.555 W |
+| Air-core what-if (no `--back-iron`) | **7.586 W** | 3.784 W |
+| Voc rms/phase | **18.70 V** | 14.03 V |
+| R_phase @20 °C | **17.20 Ω** | 17.25 Ω |
+| Turns fit / coil | **266** × 12 coils (fill 0.65) | 370 × 12 coils (fill 0.65) |
+| Bz peak / mean window | **0.661 / 0.172 T** | 0.656 / 0.133 T |
+| Magnets | 16× Ø20×5 N52 + **16× N42 20×10×5 blocks** + **48× diametric Ø5×5** | 16× Ø20×5 N52 (no Ø5) |
+| Topology | dual_rotor 8p/12c, Ø20 @R86 + N42 block @R64.5 (20 mm side radial), bobbins r50–104 × 4.5 mm, 8 bolt-on arcs/rotor + D-flat hub, open-centre stator, bases in place, 2× Ø198 × 4.76 mm steel | dual_rotor 8p/12c, R86, r65–105 × 4.95 mm, same arc-nested architecture, 2× Ø198 × 4.76 mm steel |
+| Magnet face gap (m2m) | **7.10 mm** | 7.55 mm |
+| Copper | 385 m | 386 m |
+| One-plate (measured STL bbox) | 403.7 × 402.2 mm | 403.1 × 403.5 mm |
 | Verdict | **PASS** (geometry check PASS) | PASS |
 
-That is **+0.74 %** (×1.007) in the `--back-iron` mode and +0.34 % air-core.
+That is **×1.782** (+78 %) in the `--back-iron` mode and ×2.005 air-core. What-ifs (same kit): Ø5 left out / axial Ø5 (`--halbach none`) 14.302 W; looser fill 0.60 wind 14.095 W; hot copper 60 °C 13.17 W.
+At 200 RPM a matched load draws 0.54 A/phase, just above the scorer's ≈0.5 A continuous guidance for printed formers — for continuous duty use ≥20.2 Ω/phase (≈15.1 W, Ohm's law on the scorer's V and R).
 
 ## What changed
 
-One more size step on the Gen-CA arc-nested architecture. Poles R84 → R86 (steel Ø194 → Ø198), bobbins r65–105 × 4.95 mm copper (same copper height as Gen-CA, longer mean turn). Wire sits at the 386 m filter (≈390 m spool). One-plate **403.1 × 403.5 mm**. Fill 0.60 what-if 7.879 W (FAIL turns-fit vs claimed — dense wind required). Clocking 0°, D-flat + notch, flip-symmetric holes, magnet→wound envelope 0.50 mm. Thinner-copper R86 tips (r65–107 × 4.65) scanned higher but need Ø232+ stators that would not pack. New Ø198 × 4.76 mm steel (DXF in the pack); steel_flux.py: ≈1.49 T worst-case band / 0.35 T spread. Diametric Ø5 still lower 8p/12c (all 48 spare).
+Austin's NEW N42 20×10×5 mm blocks extend every pole radially: each pole is the Ø20×5 N52 disc at R86 plus one N42 block (same polarity, axially magnetised through
+the 5 mm thickness, 20 mm side RADIAL, r54.5–74.5) right inside it, both sitting on the steel. The bobbins reach in to r50, so each turn links ≈1.6× the magnet area.
+Diametric Ø5×5 sit as Halbach columns (3 per gap, R79.8/86/92.2); arc clamp bolts move to ±13° from each pole. Same Ø229 stator OD and Ø198 steel as Gen-CD.
+The 2026-10-16 tangential-block variant (Gen-CG, 15.126 W, never shipped) is superseded (+0.8 %). steel_flux.py: worst-case ≈1.13 T at 4.76 mm.
+N52 60×10×3 bars are not used (only 10 confirmed; the 8-pole dual rotor needs 16 identical pole pieces).
 
-Night scorecard: [`WOUND_ENVELOPE_2026-10-14.md`](WOUND_ENVELOPE_2026-10-14.md) (= SCORECARD).
+**Scorer note (cuboid support).** The 2026-10-16 scorer change (optional `block_*` params → magpylib Cuboid, copied by the `--back-iron` image method) was validated on
+2026-10-17 before use: `score_kit sanity` PASS (Ø20×5 N52 face 0.3198 T vs analytic 0.3198 T); Gen-CD re-scores unchanged (8.555 W `--back-iron`, 3.784 W air-core);
+an independent check of a single N42 20×10×5 block (Br 1.29 T) matches the analytic rectangular-prism on-axis formula exactly (face 0.3638 T, 1 mm 0.3157 T, 5 mm 0.1490 T),
+and the scorer's rotated-cuboid path equals a hand-built magpylib Cuboid to 0.0 T at 0/30/90/217.5°. No scorer changes on 2026-10-17. Block grade is conservative (Br 1.29 T, low end of N42).
+
+Night scorecard: [`WOUND_ENVELOPE_2026-10-17.md`](WOUND_ENVELOPE_2026-10-17.md) (= SCORECARD).
 
 ## Runners (same night, also PASS)
 
-- Gen-CF Gen-CA rotor retrofit (keeps R84 arcs + Ø194 steel; new r63–105 × 4.65 mm stator) — `champions/runners-2026-10-14/gen-cf-dual-rotor-8p12c-ca-retrofit-r84/` (**8.385 W**, 13.68 V rms/ph, 16.75 Ω, 347 t, 375 m; air-core 3.713 W; plate 403.4 × 403.4 mm)
-- Gen-CE Gen-CD rotors / MIN-GAP wire-saver stator (≈300 m) — `champions/runners-2026-10-14/gen-ce-dual-rotor-8p12c-r86-wiresaver-300m/` (**7.490 W**, 11.57 V rms/ph, 13.41 Ω, 288 t, 301 m wire; air-core 3.329 W; plate 403.4 × 404.0 mm)
+- Gen-CL — Gen-CJ rotors on a thin-copper (4.0 mm) wire-saver stator, ≈300 m — `champions/runners-2026-10-17/gen-cl-dual-rotor-8p12c-radial-block-wiresaver-300m/` (**13.252 W**, 15.58 V rms/ph, 13.74 Ω, 196 t, 308 m; air-core 6.572 W; plate 403.7 × 402.2 mm). Swaps onto the same rotors.
+- Gen-CK — Gen-CD stator/winding kept, new hybrid-block (tangential N42 @R69.5) + diametric Ø5 arcs — `champions/runners-2026-10-17/gen-ck-dual-rotor-8p12c-cd-stator-block-retrofit-r86/` (**12.239 W**, 16.78 V rms/ph, 17.25 Ω, 370 t, 386 m; air-core 5.922 W; plate 402.3 × 399.6 mm). Upgrade path for a built Gen-CD.
 
 ## Assembly warnings
 
-- **Clap hazard** (steel-backed N52 across a 7.55 mm gap; Ø198 rotors): use the 4 temporary M4 jack rods (R18) and lower rotor B by the nuts before seating the second magnet face.
+- **Clap hazard** (steel-backed N52 discs + N42 blocks across a 7.10 mm gap; Ø198 rotors, ≈1.6× Gen-CD's magnet area): use the 4 temporary M4 jack rods (R18) and lower rotor B by the nuts before seating the second magnet face. Seat ONE magnet at a time and let its epoxy grab; blocks and their disc repel sideways (same polarity) — hold them until set. Keep the two rotors > 30 cm apart until the jack-rod step.
+- Diametric Ø5: mark N first, set to the engraved arrow with a non-magnetic pick, epoxy; leave them out if yours are axial (14.302 W).
 - Remove temporary braces and gap shims before spinning; shim against the **magnet faces** (flush seat — caliper the magnets first).
 - Brim on 0.8 mm flanges / 1.2 mm stator webs / annular stator inner rim.
-- Wind bobbins before assembly, dense and layer-by-layer; do not raise turns. 386 m of a ~390 m spool. Bases print in place — wind the bobbins, then drop them into the stator bays.
-- Bolt each magnet arc to the steel with countersunk M3 at the joints; hub D-flat / notch / steel notch all at +X.
+- Wind bobbins before assembly, dense and layer-by-layer; do not raise turns (266). 385 m of a ~390 m spool. Bases print in place — wind, then drop them into the stator bays.
 - No printed feet: cradle the stator rim or bolt long frame rods to a base; the bridges carry only shaft loads.
 
 ## Prior champion
+
+Gen-CD dual-rotor 8p/12c R86 frontier tip — `champions/2026-10-14-gen-cd-dual-rotor-8p12c-r86-frontier-tip/` (8.555 W). Superseded by Gen-CJ 15.244 W.
 
 Gen-CA dual-rotor 8p/12c R84 arcs-nested — `champions/2026-10-13-gen-ca-dual-rotor-8p12c-r84-arcs-nested/` (8.492 W). Superseded by Gen-CD 8.555 W.
 Gen-BX dual-rotor 8p/12c R71 thin-copper — `champions/2026-10-11-gen-bx-dual-rotor-8p12c-r71-thincopper/` (7.304 W). Superseded by Gen-CA 8.492 W.
