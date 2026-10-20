@@ -66,7 +66,7 @@ Champion to beat: **Gen-CJ** (`/workspace/generators/2026-10-17/gen-cj-dual-roto
 ## 2026-10-18 kits (failed night) — status
 
 The 2026-10-18 run stopped after scoring (no README/preview/scorecard/archive/push; its logs end right after the score sidecars at ≈10:03 PM ET — it ran out of time before
-`make_preview.py` / `make_docs.py`). Its three kits are scorer-PASS but still unpackaged and were NOT pushed:
+`make_preview.py` / `make_docs.py`). Its three kits are scorer-PASS and were NOT pushed. After tonight's kits were finished, tonight's job packaged them (README.md + preview.png per kit, 2026-10-18/SCORECARD.md, archive `/workspace/generators/2026-10-18-generators.tar.gz`; geometry checks PASS):
 Gen-CM inverted keyhole R77 **15.869 W**, Gen-CN keyhole radial-block R88 **15.838 W**, Gen-CO Gen-CJ keyhole-arc retrofit **15.636 W** (all `--back-iron`).
 Honest comparison: tonight's Gen-CP (15.820 W) is 0.3 % below the unshipped Gen-CM (15.869 W) — both are the same 8p/12c Ø229-stator class with the same r58–105.5 × 4.65 mm
 294-turn window; the T-pole and the inverted pole are a tie within ≈0.3 %. Tonight's push compares against the official champion Gen-CJ only, as instructed.
