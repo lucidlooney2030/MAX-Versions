@@ -75,7 +75,7 @@ Honest comparison: tonight's Gen-CP (15.820 W) is 0.3 % below the unshipped Gen-
 
 **Gen-CP** at **15.820 W** (`--back-iron`, air-core 7.622 W) — BEATS Gen-CJ 15.244 W (1.038×, same scoring mode).
 
-Push: pending.
+Push: **Gen-CP pushed** to lucidlooney2030/MAX-Versions @ `527c176` (main, fast-forward from fcacbe4, no force) — `champions/2026-10-19-gen-cp-dual-rotor-8p12c-t-pole-tangential-keyhole-r88/`, `print-packs/gen-cp-dual-rotor-8p12c-t-pole-tangential-keyhole-r88/`, runners Gen-CR/Gen-CQ in `champions/runners-2026-10-19/`, CHAMPION.md updated (back-iron + air-core, V, Ω, wire, honest note on the unshipped 2026-10-18 Gen-CM 15.869 W), scorecard = `WOUND_ENVELOPE_2026-10-19.md`.
 
 Archive (on the build box): `/workspace/generators/2026-10-19-generators.tar.gz`
 
