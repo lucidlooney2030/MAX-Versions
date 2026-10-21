@@ -65,7 +65,7 @@ Champion to beat: **Gen-CP** (`/workspace/generators/2026-10-19/gen-cp-dual-roto
 
 **Gen-CS** at **19.306 W** (`--back-iron`, air-core 9.139 W) — BEATS Gen-CP 15.820 W (1.220×, same scoring mode).
 
-Push: pending.
+Push: **Gen-CS pushed to lucidlooney2030/MAX-Versions @a234b58** (champions/2026-10-20-gen-cs-…, print-packs/gen-cs-…, runners Gen-CT/Gen-CU in champions/runners-2026-10-20/, CHAMPION.md updated). Note: the 2026-10-20 final-test FT-B1 (21.84 W --back-iron, 702 m of 24 AWG, Ø310 stator, 5 plates) was never pushed to MAX-Versions (not in CHAMPION.md) and is not on the one-spool / one-plate basis.
 
 Archive: `/workspace/generators/2026-10-20-generators.tar.gz`
 
