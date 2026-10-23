@@ -56,7 +56,7 @@ Champion to beat: **Gen-CS** (`/workspace/generators/2026-10-20/gen-cs-dual-roto
 
 **Gen-CZ** at **24.262 W** (`--back-iron`, air-core 10.945 W) — BEATS Gen-CS 19.306 W (1.257×, same scoring mode).
 
-Push: **Gen-CZ** (24.262 W) is the new champion and is pushed to lucidlooney2030/MAX-Versions (champions/2026-10-22-gen-cz-…; Gen-CX and Gen-CY as runners). Commit: PENDING.
+Push: **Gen-CZ** (24.262 W) is the new champion — pushed to lucidlooney2030/MAX-Versions @ed7a693 (champions/2026-10-22-gen-cz-dual-rotor-8p12c-inverted-triple-pole-24awg-r77/, print-packs/…, CHAMPION.md; Gen-CX and Gen-CY in champions/runners-2026-10-22/).
 
 Archive: `/workspace/generators/2026-10-22-generators.tar.gz`
 
