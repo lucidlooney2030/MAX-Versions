@@ -1,0 +1,1 @@
+g3.0_c1 (stator centred), contact, 5 deg; PLATE_NO_BASES=1 PLATE_DROP=coil_lid,coil_former (Gen-CS wound bobbins are re-used)
