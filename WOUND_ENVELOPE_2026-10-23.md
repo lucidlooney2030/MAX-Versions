@@ -56,7 +56,7 @@ Champion to beat: **Gen-CZ** (`/workspace/generators/2026-10-22/gen-cz-dual-roto
 
 **Gen-DA** at **25.809 W** (`--back-iron`, air-core 11.626 W) — BEATS Gen-CZ 24.262 W (1.064×, same scoring mode).
 
-Push: pending.
+Push: **Gen-DA** (25.809 W) is the new champion — pushed to lucidlooney2030/MAX-Versions @b156c22 (champions/2026-10-23-gen-da-dual-rotor-8p12c-inverted-triple-pole-thin-gap-24awg-r81/, print-packs/…, CHAMPION.md; Gen-DB and Gen-DC in champions/runners-2026-10-23/).
 
 Archive: `/workspace/generators/2026-10-23-generators.tar.gz`
 
