@@ -62,7 +62,7 @@ Gen-DF ties the old champion to 3 decimals but does NOT beat it: 25.8086 W vs Ge
 
 **Gen-DD** at **26.632 W** (`--back-iron`, air-core 11.805 W) — BEATS Gen-DA 25.809 W (1.032×, same scoring mode).
 
-Push: pending.
+Push: **Gen-DD** (26.632 W) is the new champion — pushed to lucidlooney2030/MAX-Versions @712193a (champions/2026-10-24-gen-dd-dual-rotor-8p12c-inverted-triple-pole-wide-stator-24awg-r86/, print-packs/…, CHAMPION.md; Gen-DE and Gen-DF in champions/runners-2026-10-24/).
 
 Archive: `/workspace/generators/2026-10-24-generators.tar.gz`
 
