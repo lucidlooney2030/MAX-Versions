@@ -1,0 +1,12 @@
+{
+ "bbox": [
+  395.1999816894531,
+  392.0,
+  14.0
+ ],
+ "counts": {
+  "fit_coupon.stl": 1,
+  "rotor_arc_pair_ns.stl": 8,
+  "fit_coupon_bay.stl": 1
+ }
+}

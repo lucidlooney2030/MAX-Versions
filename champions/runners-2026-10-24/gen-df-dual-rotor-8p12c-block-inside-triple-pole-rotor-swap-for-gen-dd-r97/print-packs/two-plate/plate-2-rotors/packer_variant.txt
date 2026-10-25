@@ -1,0 +1,1 @@
+g3.0, contact, 5 deg; PLATE_ONLY=16 rotor arcs (8 nested N+S pairs) + fit coupons
