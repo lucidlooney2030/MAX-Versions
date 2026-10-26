@@ -58,7 +58,7 @@ Champion to beat: **Gen-DD** (`/workspace/generators/2026-10-24/gen-dd-dual-roto
 
 **Gen-DG** at **27.834 W** (`--back-iron`, air-core 12.220 W) — BEATS Gen-DD 26.632 W (1.045×, same scoring mode).
 
-Push: **Gen-DG** (27.834 W) is the new champion — pushed to lucidlooney2030/MAX-Versions (champions/2026-10-25-gen-dg-dual-rotor-8p12c-inverted-triple-pole-8-layer-thin-gap-24awg-r95/, print-packs/…, CHAMPION.md; Gen-DI and Gen-DH in champions/runners-2026-10-25/).
+Push: **Gen-DG** (27.834 W) is the new champion — pushed to lucidlooney2030/MAX-Versions @7b42e5d (champions/2026-10-25-gen-dg-dual-rotor-8p12c-inverted-triple-pole-8-layer-thin-gap-24awg-r95/, print-packs/…, CHAMPION.md; Gen-DI and Gen-DH in champions/runners-2026-10-25/).
 
 Archive: `/workspace/generators/2026-10-25-generators.tar.gz`
 
