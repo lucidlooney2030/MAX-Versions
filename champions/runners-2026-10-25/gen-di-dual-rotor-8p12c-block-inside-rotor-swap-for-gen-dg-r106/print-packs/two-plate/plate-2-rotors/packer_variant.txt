@@ -1,0 +1,1 @@
+r_di_p2_s1: g3.0, contact, sort 1, 5 deg; PLATE_ONLY=8 nested N+S arc pairs + 12 coil lids

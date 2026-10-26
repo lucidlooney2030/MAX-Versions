@@ -1,0 +1,1 @@
+r_dg_p1_c1: g3.0, contact, sort 1, 5 deg, stator centred; PLATE_DROP=rotor arcs + coil lids (hubs ON this plate)
