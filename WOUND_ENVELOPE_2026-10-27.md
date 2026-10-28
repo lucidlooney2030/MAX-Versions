@@ -75,7 +75,7 @@ Champion to beat: **Gen-DJ** (`/workspace/generators/2026-10-26/gen-dj-dual-roto
 
 **Gen-DM** at **29.091 W** (`--back-iron`, air-core 11.664 W) — BEATS Gen-DJ 29.048 W (1.001×, same scoring mode).
 
-Push: pending.
+Push: Gen-DM pushed to github lucidlooney2030/MAX-Versions @9b8ed75 (champions/2026-10-27-gen-dm-…/, print-packs/gen-dm-…/, CHAMPION.md, WOUND_ENVELOPE_2026-10-27.md). Gen-DJ (2026-10-26) was not pushed: Gen-DM supersedes it (+0.15 %) with the same stator/steel.
 
 Archive: `/workspace/generators/2026-10-27-generators.tar.gz`
 
