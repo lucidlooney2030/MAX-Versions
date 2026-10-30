@@ -55,7 +55,7 @@ Champion to beat: **Gen-DM** (`/workspace/generators/2026-10-27/gen-dm-dual-roto
 
 **Gen-DP** at **35.743 W** (`--back-iron`, air-core 14.612 W) — BEATS Gen-DM 29.091 W (1.229×, same scoring mode).
 
-Push: pending.
+Push: **Gen-DP pushed** to GitHub lucidlooney2030/MAX-Versions @9ce9980 (champions/2026-10-29-gen-dp-…/, print-packs/gen-dp-…/, CHAMPION.md, WOUND_ENVELOPE_2026-10-29.md = this scorecard), 2026-10-29 ET; push-note commit follows. Not force-pushed.
 
 Archive: `/workspace/generators/2026-10-29-generators.tar.gz`
 
