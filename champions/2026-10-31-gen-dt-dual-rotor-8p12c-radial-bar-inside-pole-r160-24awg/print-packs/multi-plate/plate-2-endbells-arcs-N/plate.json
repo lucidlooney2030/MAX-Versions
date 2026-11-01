@@ -1,0 +1,12 @@
+{
+ "bbox": [
+  397.6014921902885,
+  371.79755417889544,
+  15.18999958038332
+ ],
+ "counts": {
+  "endbell_front.stl": 1,
+  "endbell_rear.stl": 1,
+  "rotor_arc_n.stl": 8
+ }
+}
