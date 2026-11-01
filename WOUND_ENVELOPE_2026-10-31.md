@@ -54,7 +54,7 @@ Champion to beat: **Gen-DP** (`/workspace/generators/2026-10-29/gen-dp-dual-roto
 
 **Gen-DT** at **51.338 W** (`--back-iron`, air-core 24.692 W) — BEATS Gen-DP 35.743 W (1.436×, same scoring mode).
 
-Push: pending.
+Push: **Gen-DT pushed** to lucidlooney2030/MAX-Versions as the new champion (commit c26ae29: champions/2026-10-31-gen-dt-dual-rotor-8p12c-radial-bar-inside-pole-r160-24awg/, print-packs/gen-dt-dual-rotor-8p12c-radial-bar-inside-pole-r160-24awg/, CHAMPION.md, WOUND_ENVELOPE_2026-10-31.md).
 
 Archive: `/workspace/generators/2026-10-31-generators.tar.gz`
 
