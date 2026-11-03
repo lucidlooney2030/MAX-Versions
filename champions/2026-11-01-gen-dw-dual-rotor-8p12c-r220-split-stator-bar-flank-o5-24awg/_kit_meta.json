@@ -1,0 +1,129 @@
+{
+ "title": "Gen-DW",
+ "n": 12,
+ "large_n": 8,
+ "mh": 5.0,
+ "recess": 0.0,
+ "RL": 220.0,
+ "rs": null,
+ "small": false,
+ "rin": 150.0,
+ "rout": 248.0,
+ "wall": 0.8,
+ "former_web": 4.4,
+ "flange_t": 0.8,
+ "fill": 0.65,
+ "fill_note": "DENSE layered wind with a jig; scorer cap 0.65",
+ "fill_how": "The scored turns assume a dense, layer-by-layer wind at fill 0.65 (insulated-wire area / window; the scorer cap). Use a winding jig on a drill/lathe with a turn counter, lay each layer side-by-side with light back-tension, and do not scramble-wind: a scramble wind only reaches \u22480.55\u20130.60 and then the window holds fewer turns (scorer what-if `--fill 0.60` is in the table above). Never wind more than the listed turns \u2014 the copper must stay below the flanges.",
+ "flange_bolt_n": 4,
+ "flange_bolt_offset": 45.0,
+ "bar_endbells": true,
+ "bar_angles": [
+  45,
+  135
+ ],
+ "bar_w": 20,
+ "carrier_od": 500.0,
+ "steel_t": 4.76,
+ "hub_h": 12.0,
+ "steel_desc": "2\u00d7 \u00d8500 \u00d7 4.76 mm (3/16\") mild-steel discs",
+ "steel_extra": "\n**New steel:** \u00d8500 discs, M3 clamp map R30 at 0/90/180/270\u00b0 and R44 on the inter-pole angles 67.5/112.5/247.5/292.5\u00b0 (both inside the R220 magnet ring). Cut from this kit's `steel_backiron_disc.dxf`; no earlier disc fits.\n",
+ "o5_note": "48 O5x5 used as AXIAL POLE EXTENDERS, 3 per pole per rotor (pair flanking the N52 bar at its centre R179.4 \u00b18.75 mm + 1 at R244.25 just outside the N42 block), same polarity as the pole \u2014 NOT Halbach assists (no inter-pole \u00d85). AXIAL O5: stand upright. DIAMETRIC O5: lay on its side (axis tangential) with the pole-letter side up \u2014 both fit the 5.3 mm square pocket; the scorer counts them either way (upright scored, lying what-if reported). If your \u00d85 are neither axial nor diametric (unknown magnetisation), leave them out and expect a lower score.",
+ "bolt_r_inner": 22.0,
+ "bolt_inner_angles": [
+  0,
+  90,
+  180,
+  270
+ ],
+ "bolt_r_outer": 220.0,
+ "bolt_outer_angles": [
+  13.0,
+  32.0,
+  58.0,
+  77.0,
+  103.0,
+  122.0,
+  148.0,
+  167.0,
+  193.0,
+  212.0,
+  238.0,
+  257.0,
+  283.0,
+  302.0,
+  328.0,
+  347.0
+ ],
+ "brace_r": 18.0,
+ "brace_angles": [
+  45,
+  135,
+  225,
+  315
+ ],
+ "card_title": "Gen-DW \u00b7 Gen-DT pole grown to R220 \u00b7 SPLIT stator (4 segments) \u00b7 narrow bobbins r150\u2013248 \u00b7 24 AWG",
+ "card_sub": "N52 bar RADIAL @R179.4 (+\u00d85 pair beside it) + \u00d820 @R220 + N42 @R235.6 + \u00d85 @R244.25 \u00b7 bobbins r150\u2013248 \u00d7 4.4 mm \u00b7 7.00 mm gap \u00b7 2\u00d7 \u00d8500 steel \u00b7 2026-11-01",
+ "idea": "The Gen-DT radial magnet strip (N52 bar inside the \u00d820, N42 block outside) moved out to R220 with much narrower bobbins (26 mm extra web per side), and two of the three \u00d85 per pole moved beside the narrow 10 mm bar. The stator (\u00d8522) no longer fits the bed, so it is printed as 4 half-lapped quarter segments; at 200 RPM the larger radius raises surface speed and the narrow turns keep the 390 m spool at \u224810.9 \u03a9.",
+ "b": 12.7,
+ "ring_rotor": true,
+ "arc_rotor": true,
+ "arc_x": true,
+ "n_seg": 8,
+ "ring_stator": true,
+ "bases_in_place": true,
+ "bay_clear": 0.35,
+ "span_m": 26.0,
+ "seg_joint": 19.0,
+ "seg_stator": true,
+ "stator_n_seg": 4,
+ "awg": 24,
+ "wire_od": 0.55,
+ "halbach_arcs": true,
+ "bolt_delta": 13.0,
+ "pole_o5": {
+  "pos": [
+   [
+    179.61325814092902,
+    2.7923138091106425
+   ],
+   [
+    179.61325814092902,
+    -2.7923138091106425
+   ],
+   [
+    244.25,
+    0.0
+   ]
+  ],
+  "mode": "upright"
+ },
+ "blocks": {
+  "R": 235.6,
+  "radial": 10.0,
+  "tangential": 20.0,
+  "keyhole": true
+ },
+ "bars": {
+  "R": 179.4,
+  "radial_in": true
+ },
+ "steel_note": "Steel: 2\u00d7 \u00d8500 \u00d7 4.76 mm (3/16\") mild-steel discs, clamp map hub M3 at R22 0/90/180/270\u00b0, 4\u00d7 \u00d84.3 brace holes R18 at 45/135/225/315\u00b0, 16 arc-clamp M3 at R220 \u00b113\u00b0 from every pole, index notch at +X \u2014 cut from this kit's `steel_backiron_disc.dxf` (laser-cut service, or any shop that cuts 3/16\" mild steel). Each disc weighs \u22487.3 kg. Lobed arcs: 2.4 mm PLA around each pocket; the epoxy-to-steel bond, not the PLA, holds the magnets. NEW discs (\u00d8500, clamp holes at R220); no earlier disc fits. Gen-DX uses the SAME discs and arcs.",
+ "retro_md": "\n## Modular notes (Gen-DW)\n\nNew rotors (\u00d8500 steel, arcs at R220) and a new split stator. **Gen-DX is a drop-in alternative stator for these same rotors** (scramble-wind friendly, fill 0.60). **From a Gen-DT build you re-use:** all 16 \u00d820, 16 N42 blocks, 16 N52 bars and 48 \u00d85 (pop them out of the Gen-DT arcs), the 8 mm shaft, 608RS bearings, collars and the hub design; the 390 m of 24 AWG can be unwound and re-wound if the enamel is undamaged (otherwise a new spool). New: steel discs, arcs, split stator, endbell bars. Swap stators/rotors with the 4 temporary M4 jack rods: raise rotor B on the nuts (clap hazard in reverse, never by hand), swap the part, lower rotor B, remove the rods.\n",
+ "span": 9.42,
+ "carrier_thick": 5.0,
+ "pocket_h": 5.0,
+ "flange_bolt_r": 256.0,
+ "stator_od": 522.0,
+ "endbell_od": 522.0,
+ "stator_ir": 144.85,
+ "ring_ir": 146.4,
+ "hub_flange_od": 58.0,
+ "seg_deg": 45.0,
+ "seg_start": -26.0,
+ "halb_block": "halbach_magnetisation = \"none\";  // NO inter-pole Halbach O5 in this kit: all 48 O5x5 are AXIAL POLE EXTENDERS (pole_o5_*)\nrotor_b_same_axis   = true;     // same-index magnets share one axis: N faces S across the gap",
+ "small_block": "small_r_list        = [];       // no O5 pockets\n// --- N42 rectangular BLOCK magnets (2026-10-16/18): one 20x10x5 block per pole on the pole angle, next to the O20 disc ---\nblock_R_list        = [235.6];   // block centre radius (pole angle); same polarity as its O20 -> radially extended pole (scorer position = pushed-apart magnet centre)\nblock_angle_list    = [0];\nblock_radial        = 10.0;    // block side that runs RADIALLY (mm)\nblock_tangential    = 20.0;    // block side that runs TANGENTIALLY (mm)\nblock_h             = 5.0;     // magnetised through the 5 mm thickness (axial), = magnet_h_large so it sits on the steel\nblock_Br            = 1.29;    // N42 remanence (1.28-1.32 T); scorer models it as a magpylib Cuboid\nblock_pocket_clear  = 0.3;    // pocket = block + 0.3 mm each way (+ 1.2 mm corner reliefs)\nkeyhole_pocket      = true;     // 2026-10-18: disc + block share ONE keyhole pocket (hull); they repel onto the far walls\ndisc_pocket_shift   = 0.00;    // disc pocket centre offset (radial) so the pushed-apart disc sits at R_large\nblock_pocket_shift  = -0.15;    // block pocket centre offset so the pushed-apart block sits at block_R_list (scorer position)\n// --- N52 60x10x3 BARS (2026-10-30 RADIAL-IN, physics_scorer block2 group): one per pole, RADIALLY INSIDE the O20, 60 mm side RADIAL ---\nblock2_R_list       = [179.4];   // bar centre radius (pushed onto the INNER pocket wall by its disc)\nblock2_angle_list   = [0];\nblock2_radial       = 60.0;     // bar 60 mm side RADIAL (along the pole axis)\nblock2_tangential   = 10.0;     // bar 10 mm side tangential\nblock2_h            = 3.0;      // magnetised through the 3 mm thickness (axial); gap face FLUSH with the disc face\nblock2_Br           = 1.43;     // N52\nblock2_pocket_clear = 0.3;\nblock2_pocket_depth = 3.05;     // BLIND pocket from the stator face: bar sits on a 1.95 mm PLA floor over the steel\nblock2_pocket_shift = 0.15;     // pocket centre +0.15 -> inner wall at R - 30.0 (pushed-in bar sits exactly at block2_R_list)\nblock2_merge_in     = 0.0;\nblock2_merge_out    = 0.45;     // pocket OUTER wall extended outward so it opens into the disc pocket (no PLA sliver)\neng_a = 4.6; eng_L = 5.0; eng_ta = 4.6; eng_tr = 0;   // engraving: N/S pole letter on the spine (no Halbach arrows; 2026-10-26 axial O5)\n// --- O5x5 AXIAL POLE EXTENDERS (2026-10-26, physics_scorer pole_o5 group): 3 per pole, same polarity as the pole's disc ---\npole_o5_R_list      = [179.613, 179.613, 244.250];   // centre radius of each O5 (pole frame)\npole_o5_angle_list  = [2.7923, -2.7923, 0.0000];   // angle offset from the pole (deg)\npole_o5_mode        = \"upright\";   // scored as UPRIGHT axial O5x5 (lying diametric O5 scored as a what-if: within 0.05 %)\npole_o5_d           = 5.0;\npole_o5_h           = 5.0;\npole_o5_pocket      = 5.3;      // SQUARE through-pocket 5.3 x 5.3 (fits an upright O5x5 OR one lying on its side), 1.2 mm corner reliefs\n",
+ "stator_lap_deg": 6.0,
+ "seg_block": "stator_n_seg        = 4;        // 2026-11-01: SPLIT stator, 4 segments (A,B,A,B) joined by half-laps (stator > 410 mm bed)\nstator_seg_j0       = 15;      // first joint angle = mid-angle between coil stations 0 and 1\nstator_lap_deg      = 6;      // half-lap half-width (deg) either side of a joint; web left to the nearest bay >= 1.2 mm\nstator_lap_pin_r    = [158.0, 240.0];   // 1.75 mm filament pins through each lap; + 1x M3 at R flange_bolt_r\n",
+ "turns": 152
+}
