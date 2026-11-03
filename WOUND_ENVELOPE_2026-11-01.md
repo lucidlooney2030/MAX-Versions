@@ -56,7 +56,7 @@ Champion to beat: **Gen-DT** (`/workspace/generators/2026-10-31/gen-dt-dual-roto
 
 **Gen-DW** at **74.327 W** (`--back-iron`, air-core 34.901 W) — BEATS Gen-DT 51.338 W (1.448×, same scoring mode).
 
-Push: pending (see CHAMPION.md).
+Push (completed 2026-11-02 ≈9:45 PM ET, after the failed 11-01 run): Gen-DW pushed to lucidlooney2030/MAX-Versions @5a24cc9 (champions/2026-11-01-gen-dw-…, print-packs/gen-dw-…, CHAMPION.md). Frame-stiffness caveat added to all three READMEs and CHAMPION.md (printed bearing bridges too flexible for ≈13–15 kg rotors; use a rigid pedestal frame).
 
 Archive: `/workspace/generators/2026-11-01-generators.tar.gz`
 
