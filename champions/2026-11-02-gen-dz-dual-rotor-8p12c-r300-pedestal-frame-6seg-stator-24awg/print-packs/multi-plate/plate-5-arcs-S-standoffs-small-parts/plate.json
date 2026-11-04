@@ -1,0 +1,15 @@
+{
+ "bbox": [
+  384.058599425112,
+  385.1379187886691,
+  34.0
+ ],
+ "counts": {
+  "rotor_arc_s.stl": 8,
+  "gap_spacer.stl": 12,
+  "post_shim.stl": 12,
+  "gap_sleeve.stl": 1,
+  "race_spacer.stl": 2,
+  "top_standoff.stl": 3
+ }
+}

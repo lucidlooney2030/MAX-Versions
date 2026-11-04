@@ -1,0 +1,12 @@
+{
+ "bbox": [
+  400.64,
+  386.59,
+  6.0
+ ],
+ "bodies": 10,
+ "min_gap_free": 3.68,
+ "in_place_bodies": 4,
+ "in_place_gap": 0.35,
+ "within_410": true
+}
