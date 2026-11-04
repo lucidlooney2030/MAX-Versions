@@ -53,7 +53,7 @@ Champion to beat: **Gen-DW** (`/workspace/generators/2026-11-01/gen-dw-dual-roto
 
 **Gen-DZ** at **102.730 W** (`--back-iron`, air-core 48.920 W) — BEATS Gen-DW 74.327 W (1.382×, same scoring mode).
 
-Push: pending.
+Push: lucidlooney2030/MAX-Versions @f180779 (2026-11-03 ET).
 
 Archive: `/workspace/generators/2026-11-02-generators.tar.gz`
 
