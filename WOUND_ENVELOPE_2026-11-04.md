@@ -65,7 +65,7 @@ So at the Gen-DZ radius the in-line pole LOSES (the extra coil length costs turn
 
 **Gen-EB** at **118.064 W** (`--back-iron`, air-core 54.906 W) — BEATS Gen-DZ 102.730 W (1.149×, same scoring mode).
 
-Push: pending (see final report).
+Push: lucidlooney2030/MAX-Versions @38a1a02 (2026-11-04 ET) — champions/2026-11-04-gen-eb-dual-rotor-8p12c-r360-inline-o5-pole-pedestal-6seg-24awg + print-packs + CHAMPION.md.
 
 Archive: `/workspace/generators/2026-11-04-generators.tar.gz`
 
