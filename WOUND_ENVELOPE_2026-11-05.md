@@ -17,3 +17,5 @@ Coil formers are windable bobbins; copper only between flanges. Turns = scorer t
 - Magnet face gap 7.00 mm; wound envelope clearance ≥0.5 mm; neighbouring formers ≥0.4 mm; stator webs ≥1.2 mm
 - Wind before assembly; brim on thin flanges.
 
+
+Pushed: lucidlooney2030/MAX-Versions @ 32cbb13df98d4ddfd4e298892213c2f88a5ab8c8 (champion kit + print-pack).
