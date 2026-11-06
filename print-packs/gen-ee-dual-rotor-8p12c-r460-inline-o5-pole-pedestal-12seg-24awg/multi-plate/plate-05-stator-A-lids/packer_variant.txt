@@ -1,0 +1,1 @@
+packer output plate-5-stator-A-lids (plates05.py)

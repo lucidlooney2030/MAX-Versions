@@ -1,0 +1,13 @@
+{
+ "bbox": [
+  399.03385427621447,
+  393.0,
+  8.0
+ ],
+ "counts": {
+  "stator_segment_a_with_bases_in_place.stl": 1,
+  "spider_arm_inner.stl": 1,
+  "spider_arm_outer.stl": 1,
+  "coil_lid.stl": 2
+ }
+}

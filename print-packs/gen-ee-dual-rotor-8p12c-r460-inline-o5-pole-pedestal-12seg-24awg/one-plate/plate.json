@@ -1,0 +1,13 @@
+{
+ "bbox": [
+  400.7034395726378,
+  399.35351020666724,
+  16.989999771118164
+ ],
+ "counts": {
+  "rotor_arc_n.stl": 3,
+  "rotor_arc_s.stl": 3,
+  "coil_lid.stl": 6,
+  "rotor_hub.stl": 1
+ }
+}

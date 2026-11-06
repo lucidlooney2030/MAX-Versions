@@ -1,0 +1,11 @@
+{
+ "bbox": [
+  399.03385427621447,
+  250.92086593449017,
+  6.0
+ ],
+ "counts": {
+  "stator_segment_b_with_bases_in_place.stl": 1,
+  "coil_lid.stl": 2
+ }
+}

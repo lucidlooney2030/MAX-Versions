@@ -1,0 +1,15 @@
+{
+ "bbox": [
+  350.0,
+  395.24655827372686,
+  48.599998474121094
+ ],
+ "counts": {
+  "rotor_arc_n.stl": 4,
+  "base_pedestal.stl": 1,
+  "spider_hub.stl": 1,
+  "rotor_hub.stl": 2,
+  "stator_post.stl": 6,
+  "shaft_collar.stl": 4
+ }
+}

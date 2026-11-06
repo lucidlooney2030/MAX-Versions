@@ -1,0 +1,1 @@
+packer output plate-3-stator-A-lids-arm (plates05.py)
